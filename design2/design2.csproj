@@ -144,7 +144,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Examples\Chapter1.aspx" />
+    <Content Include="Examples\Chapter2.aspx" />
     <Content Include="Notes\Chapter3.aspx" />
+    <Content Include="Pictures\current.jpg" />
     <Content Include="Quiz\Chapter1.aspx" />
     <Content Include="Notes\Chapter4.aspx" />
     <Content Include="Notes\Chapter5.aspx" />
@@ -237,6 +239,13 @@
     </Compile>
     <Compile Include="Examples\Chapter1.aspx.designer.cs">
       <DependentUpon>Chapter1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\Chapter2.aspx.cs">
+      <DependentUpon>Chapter2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examples\Chapter2.aspx.designer.cs">
+      <DependentUpon>Chapter2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Notes\Chapter3.aspx.cs">
       <DependentUpon>Chapter3.aspx</DependentUpon>

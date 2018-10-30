@@ -41,7 +41,9 @@
 		&nbsp;
 		<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="Notes/Chapter2">Chapter 2</asp:HyperLink>
 				</td>
-				<td style="width: 171px; height: 31px;">&nbsp;</td>
+				<td style="width: 171px; height: 31px;">&nbsp;&nbsp;
+					<asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="Examples/Chapter2">Example Problems</asp:HyperLink>
+				</td>
 				<td style="width: 165px; height: 31px;">&nbsp;</td>
 				<td style="width: 171px; height: 31px;">&nbsp;</td>
 			</tr>

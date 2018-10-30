@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-			<asp:Button ID="Button4" runat="server" Text="Button" />
+			<asp:Button ID="Button3" runat="server" Text="Button" OnClick="Button3_Click1" />
 			<br />
 			<asp:Button ID="Button1" runat="server" BackColor="#3366FF" ForeColor="White" Height="32px" PostBackUrl="~/" Text="Return to EE206 Home Page" Width="277px" />
         &nbsp;
@@ -20,30 +20,21 @@
 			<br />
 			There is a current of 3 amps passing through a 20 ohm resistor. How much voltage drop is across the resistor?<br />
 			<br />
-			Answer: 3 A * 20<span style="font-variant-ligatures: normal;
-font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
-text-decoration-style: initial;text-decoration-color: initial;word-spacing:
-0px"><span style="color: #222222; background: white"><span style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin"> Ω = <strong>60 V</strong></span></span></span><br />
+			Answer: 3 A * 20 Ω = <strong>60 V</strong>
 			<br />
 			<br />
 			Example 2:<br />
 			<br />
 			A voltage source of 5 volts passes a current through a resistor with resistance of 50 ohms. How much current passes through the circuit?<br />
 			<br />
-			Answer: 5 V / 50 <span style="font-variant-ligatures: normal;
-font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
-text-decoration-style: initial;text-decoration-color: initial;word-spacing:
-0px"><span style="color: #222222; background: white"><span style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin"> Ω = <strong>0.1 A</strong> (or 100 mA)</span></span></span><br />
+			Answer: 5 V / 50 Ω = <strong>0.1 A</strong> (or <strong>100 mA</strong>)
 			<br />
 			<br />
 			Example 3:<br />
 			<br />
 			A current of 2 amps comes from a voltage source with 10 volts. How much resistance is in the circuit?<br />
 			<br />
-			Answer: 10 V / 2 A = <strong>5 </strong><span style="font-variant-ligatures: normal;
-font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
-text-decoration-style: initial;text-decoration-color: initial;word-spacing:
-0px"><span style="color: #222222; background: white"><span style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin"> Ω</span></span></span><br />
+			Answer: 10 V / 2 A = <strong>5 Ω</strong><br />
 			<br />
 			<br />
 			<br />

@@ -15,17 +15,17 @@ namespace design2.Examples
 			if (Styles.DarkModeIsOff)
 			{
 				this.Theme = "DarkMode";
-				Button4.Text = "Turn Dark Mode Off";
+				Button3.Text = "Turn Dark Mode Off";
 			}
 			else
 			{
 				this.Theme = "LightMode";
-				Button4.Text = "Turn Dark Mode On";
+				Button3.Text = "Turn Dark Mode On";
 
 			}
 		}
 
-		protected void Button3_Click(object sender, EventArgs e)
+		protected void Button3_Click1(object sender, EventArgs e)
 		{
 			if (Styles.DarkModeIsOff) Styles.DarkModeIsOff = false;
 			else Styles.DarkModeIsOff = true;

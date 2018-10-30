@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace design2.pages {
+namespace design2.Examples {
     
     
-    public partial class Chapter1 {
+    public partial class Chapter2 {
         
         /// <summary>
         /// form1 control.
@@ -22,13 +22,13 @@ namespace design2.pages {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Button3 control.
+        /// Button4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button3;
+        protected global::System.Web.UI.WebControls.Button Button4;
         
         /// <summary>
         /// Button1 control.
@@ -40,21 +40,12 @@ namespace design2.pages {
         protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
-        /// Button4 control.
+        /// Button2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button4;
-        
-        /// <summary>
-        /// nextChapter control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button nextChapter;
+        protected global::System.Web.UI.WebControls.Button Button2;
     }
 }

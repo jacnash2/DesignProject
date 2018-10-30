@@ -6,31 +6,29 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using design2.Classes;
 
-namespace design2.pages
+namespace design2.Examples
 {
-	public partial class Chapter1 : System.Web.UI.Page
+	public partial class Chapter2 : System.Web.UI.Page
 	{
-		//search bar code: if(form1.InnerText.Contains("Hi"));
-
 		public void Page_PreInit()
 		{
 			if (Styles.DarkModeIsOff)
 			{
 				this.Theme = "DarkMode";
-				Button3.Text = "Turn Dark Mode Off";
+				Button4.Text = "Turn Dark Mode Off";
 			}
 			else
 			{
 				this.Theme = "LightMode";
-				Button3.Text = "Turn Dark Mode On";
-			}
-		} 
+				Button4.Text = "Turn Dark Mode On";
 
-		protected void Button3_Click(object sender, EventArgs e)
+			}
+		}
+
+		protected void Button4_Click(object sender, EventArgs e)
 		{
 			if (Styles.DarkModeIsOff) Styles.DarkModeIsOff = false;
 			else Styles.DarkModeIsOff = true;
-			//refresh page
 			Response.Redirect(Request.RawUrl);
 		}
 	}
