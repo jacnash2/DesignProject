@@ -143,17 +143,12 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
-    <Content Include="Examples\Chapter1.aspx" />
-    <Content Include="Examples\Chapter2.aspx" />
-    <Content Include="Notes\Chapter3.aspx" />
+    <Content Include="Examples\Section1.aspx" />
+    <Content Include="Examples\Section2.aspx" />
+    <Content Include="Notes\Section1.aspx" />
+    <Content Include="Notes\Section3.aspx" />
     <Content Include="Pictures\current.jpg" />
-    <Content Include="Quiz\Chapter1.aspx" />
-    <Content Include="Notes\Chapter4.aspx" />
-    <Content Include="Notes\Chapter5.aspx" />
-    <Content Include="Notes\Chapter6.aspx" />
-    <Content Include="Notes\Chapter7.aspx" />
-    <Content Include="Notes\Chapter8.aspx" />
-    <Content Include="Notes\Chapter9.aspx" />
+    <Content Include="Quiz\Section1.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -168,12 +163,16 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="WebForm1.aspx" />
     <Content Include="App_Themes\LightMode\Skin1.skin" />
     <Content Include="App_Themes\DarkMode\Skin1.skin" />
+    <Content Include="Notes\Section2.aspx" />
+    <Content Include="Notes\Section4.aspx" />
+    <Content Include="Notes\Section5.aspx" />
+    <Content Include="Notes\Section6.aspx" />
+    <Content Include="Notes\Section7.aspx" />
+    <Content Include="Notes\Section8.aspx" />
+    <Content Include="Notes\Section9.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Notes\Chapter1.aspx" />
-    <Content Include="Notes\Chapter2.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -233,92 +232,43 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Examples\Chapter1.aspx.cs">
-      <DependentUpon>Chapter1.aspx</DependentUpon>
+    <Compile Include="Examples\Section1.aspx.cs">
+      <DependentUpon>Section1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Examples\Chapter1.aspx.designer.cs">
-      <DependentUpon>Chapter1.aspx</DependentUpon>
+    <Compile Include="Examples\Section1.aspx.designer.cs">
+      <DependentUpon>Section1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Examples\Chapter2.aspx.cs">
-      <DependentUpon>Chapter2.aspx</DependentUpon>
+    <Compile Include="Examples\Section2.aspx.cs">
+      <DependentUpon>Section2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Examples\Chapter2.aspx.designer.cs">
-      <DependentUpon>Chapter2.aspx</DependentUpon>
+    <Compile Include="Examples\Section2.aspx.designer.cs">
+      <DependentUpon>Section2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Notes\Chapter3.aspx.cs">
-      <DependentUpon>Chapter3.aspx</DependentUpon>
+    <Compile Include="Notes\Section1.aspx.cs">
+      <DependentUpon>Section1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Notes\Chapter3.aspx.designer.cs">
-      <DependentUpon>Chapter3.aspx</DependentUpon>
+    <Compile Include="Notes\Section1.aspx.designer.cs">
+      <DependentUpon>Section1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Quiz\Chapter1.aspx.cs">
-      <DependentUpon>Chapter1.aspx</DependentUpon>
+    <Compile Include="Notes\Section3.aspx.cs">
+      <DependentUpon>Section3.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Quiz\Chapter1.aspx.designer.cs">
-      <DependentUpon>Chapter1.aspx</DependentUpon>
+    <Compile Include="Notes\Section3.aspx.designer.cs">
+      <DependentUpon>Section3.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Notes\Chapter4.aspx.cs">
-      <DependentUpon>Chapter4.aspx</DependentUpon>
+    <Compile Include="Quiz\Section1.aspx.cs">
+      <DependentUpon>Section1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Notes\Chapter4.aspx.designer.cs">
-      <DependentUpon>Chapter4.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Notes\Chapter5.aspx.cs">
-      <DependentUpon>Chapter5.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Notes\Chapter5.aspx.designer.cs">
-      <DependentUpon>Chapter5.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Notes\Chapter6.aspx.cs">
-      <DependentUpon>Chapter6.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Notes\Chapter6.aspx.designer.cs">
-      <DependentUpon>Chapter6.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Notes\Chapter7.aspx.cs">
-      <DependentUpon>Chapter7.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Notes\Chapter7.aspx.designer.cs">
-      <DependentUpon>Chapter7.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Notes\Chapter8.aspx.cs">
-      <DependentUpon>Chapter8.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Notes\Chapter8.aspx.designer.cs">
-      <DependentUpon>Chapter8.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Notes\Chapter9.aspx.cs">
-      <DependentUpon>Chapter9.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Notes\Chapter9.aspx.designer.cs">
-      <DependentUpon>Chapter9.aspx</DependentUpon>
+    <Compile Include="Quiz\Section1.aspx.designer.cs">
+      <DependentUpon>Section1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Notes\Chapter1.aspx.cs">
-      <DependentUpon>Chapter1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Notes\Chapter1.aspx.designer.cs">
-      <DependentUpon>Chapter1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Notes\Chapter2.aspx.cs">
-      <DependentUpon>Chapter2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Notes\Chapter2.aspx.designer.cs">
-      <DependentUpon>Chapter2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -342,12 +292,54 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Notes\Section2.aspx.cs">
+      <DependentUpon>Section2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Notes\Section2.aspx.designer.cs">
+      <DependentUpon>Section2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Notes\Section4.aspx.cs">
+      <DependentUpon>Section4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notes\Section4.aspx.designer.cs">
+      <DependentUpon>Section4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Notes\Section5.aspx.cs">
+      <DependentUpon>Section5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notes\Section5.aspx.designer.cs">
+      <DependentUpon>Section5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Notes\Section6.aspx.cs">
+      <DependentUpon>Section6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notes\Section6.aspx.designer.cs">
+      <DependentUpon>Section6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Notes\Section7.aspx.cs">
+      <DependentUpon>Section7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notes\Section7.aspx.designer.cs">
+      <DependentUpon>Section7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Notes\Section8.aspx.cs">
+      <DependentUpon>Section8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notes\Section8.aspx.designer.cs">
+      <DependentUpon>Section8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Notes\Section9.aspx.cs">
+      <DependentUpon>Section9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notes\Section9.aspx.designer.cs">
+      <DependentUpon>Section9.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

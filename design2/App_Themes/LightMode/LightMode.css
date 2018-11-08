@@ -1,4 +1,11 @@
-﻿body {
+﻿.button {
+	color: black;
+}
+.header {
+	font-family: "Calibri Light";
+	font-size: 24px;
+}
+body {
 	font-family: Calibri;
 	padding-left: 2em;
 	padding-right: 2em;
