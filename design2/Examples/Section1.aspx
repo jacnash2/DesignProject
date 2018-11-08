@@ -1,21 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Section1.aspx.cs" Inherits="design2.Examples.Chapter1" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Example Problems</title>
-</head>
-<body>
-
-
-    <form id="form1" runat="server">
-        <div>
-			<asp:Button ID="Button3" runat="server" Text="Button" OnClick="Button3_Click1" />
-			<br />
-			<asp:Button ID="Button1" runat="server" BackColor="#3366FF" ForeColor="White" Height="32px" PostBackUrl="~/" Text="Return to EE206 Home Page" Width="277px" />
-        &nbsp;
-			<asp:Button ID="Button2" runat="server" BackColor="#3366FF" ForeColor="White" Height="32px" PostBackUrl="~/Notes/Chapter1" Text="Back to Notes" Width="203px" />
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Section1.aspx.cs" Inherits="design2.WebForm7" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+		<div>
+			<asp:Button ID="Button2" runat="server" PostBackUrl="~/Notes/Section1" Text="Back to Notes" class="button"/>
         	<br />
 			<br />
 			Example 1:<br />
@@ -44,6 +30,4 @@
 			<br />
 			<br />
         </div>
-    </form>
-</body>
-</html>
+</asp:Content>
