@@ -6,62 +6,42 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using design2.Classes;
 
-namespace design2.ee206
+namespace design2
 {
-	public partial class Ch1Quiz : System.Web.UI.Page
+	public partial class WebForm2 : System.Web.UI.Page
 	{
-		int correct=0;
-
-		protected void Button1_Click(object sender, EventArgs e)
+		protected void Page_Load(object sender, EventArgs e)
 		{
-			if (RadioButtonList1.SelectedValue == "A") correct++;
+			if (Styles.DarkModeIsOff) LabelDarkMode.Text = "Dark mode does not apply to quiz pages.";
+		}
 
+		int correct = 0;
 
+		protected void Button1_Click1(object sender, EventArgs e)
+		{
 			if (RadioButtonList1.SelectedValue == "A")
 			{
-				TextBox3.Text = "\u2713";
-				TextBox3.ForeColor = System.Drawing.Color.Green;
+				Label1.Text = "\u2713";
+				Label1.ForeColor = System.Drawing.Color.Green;
 				correct++;
 			}
 			else
 			{
-				TextBox3.Text = "x";
-				TextBox3.ForeColor = System.Drawing.Color.DarkRed;
+				Label1.Text = "x";
+				Label1.ForeColor = System.Drawing.Color.DarkRed;
 			}
-			if (TextBox2.Text.Trim() == "B" || TextBox2.Text.Trim() == "b")
+			if (TextBox1.Text.Trim() == "B" || TextBox1.Text.Trim() == "b")
 			{
-				TextBox4.Text = "\u2713";
-				TextBox4.ForeColor = System.Drawing.Color.Green;
+				Label2.Text = "\u2713";
+				Label2.ForeColor = System.Drawing.Color.Green;
 				correct++;
 			}
 			else
 			{
-				TextBox4.Text = "x";
-				TextBox4.ForeColor = System.Drawing.Color.DarkRed;
+				Label2.Text = "x";
+				Label2.ForeColor = System.Drawing.Color.DarkRed;
 			}
-			TextOutput.Text = correct + " correct out of " + 2 + " questions";
-		}
-
-		public void Page_PreInit()
-		{
-			if (Styles.DarkModeIsOff)
-			{
-				this.Theme = "DarkMode";
-				Button4.Text = "Turn Dark Mode Off";
-			}
-			else
-			{
-				this.Theme = "LightMode";
-				Button4.Text = "Turn Dark Mode On";
-
-			}
-		}
-
-		protected void Button4_Click1(object sender, EventArgs e)
-		{
-			if (Styles.DarkModeIsOff) Styles.DarkModeIsOff = false;
-			else Styles.DarkModeIsOff = true;
-			Response.Redirect(Request.RawUrl);
+			LabelOutput.Text = correct + " correct out of " + 2 + " questions";
 		}
 	}
 }

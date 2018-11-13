@@ -146,7 +146,6 @@
     <Content Include="Notes\Section1.aspx" />
     <Content Include="Notes\Section3.aspx" />
     <Content Include="Pictures\current.jpg" />
-    <Content Include="Quiz\Section1.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -172,6 +171,7 @@
     <Content Include="Notes\Section9.aspx" />
     <Content Include="Examples\Section1.aspx" />
     <Content Include="Examples\Section2.aspx" />
+    <Content Include="Quiz\Section1.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -245,13 +245,6 @@
     </Compile>
     <Compile Include="Notes\Section3.aspx.designer.cs">
       <DependentUpon>Section3.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Quiz\Section1.aspx.cs">
-      <DependentUpon>Section1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Quiz\Section1.aspx.designer.cs">
-      <DependentUpon>Section1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -340,6 +333,13 @@
     </Compile>
     <Compile Include="Examples\Section2.aspx.designer.cs">
       <DependentUpon>Section2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\Section1.aspx.cs">
+      <DependentUpon>Section1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quiz\Section1.aspx.designer.cs">
+      <DependentUpon>Section1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
