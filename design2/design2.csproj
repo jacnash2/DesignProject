@@ -172,6 +172,7 @@
     <Content Include="Examples\Section1.aspx" />
     <Content Include="Examples\Section2.aspx" />
     <Content Include="Quiz\Section1.aspx" />
+    <Content Include="SI.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -340,6 +341,13 @@
     </Compile>
     <Compile Include="Quiz\Section1.aspx.designer.cs">
       <DependentUpon>Section1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SI.aspx.cs">
+      <DependentUpon>SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SI.aspx.designer.cs">
+      <DependentUpon>SI.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
