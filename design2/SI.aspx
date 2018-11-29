@@ -1,7 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SI.aspx.cs" Inherits="design2.WebForm8" %>
+﻿<%@ Page Title="SI Units" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SI.aspx.cs" Inherits="design2.WebForm8" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <p style="width: 1371px; height: 369px">
-        Important&nbsp; SI Units<br />
+	<p style="margin-left: 40px">
+<span class="header">Important SI Units</span></p>
         <table border="1" class="nav-justified" style="width: 30%; margin-left: 47px">
             <tr>
                 <td style="width: 80px">Name</td>
@@ -39,5 +39,4 @@
                 <td>Inductance</td>
             </tr>
         </table>
-    </p>
 </asp:Content>

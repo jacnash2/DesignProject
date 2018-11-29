@@ -17,9 +17,9 @@
 		<p>
 			R<sub>eq</sub> = R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub></p>
 		<p>
-			It&#39;s very easy to work with resistors in series. The hardest part is just recognizing when resistors are in series and when they actually are not. Now, for something a little less easy: resistors in parallel.</p>
+			It's very easy to work with resistors in series. The hardest part is just recognizing when resistors are in series and when they actually are not. Now, for something a little less easy: resistors in parallel.</p>
 		<p>
-			&nbsp;</p>
+			</p>
 		<p class="header">
 			Resistors in Parallel</p>
 		<p>
@@ -29,7 +29,7 @@
 		<p>
 			R<sub>eq</sub> = 1 / ( 1 / R<sub>1</sub> + 1 / R<sub>2</sub> + 1 / R<sub>3</sub> )</p>
 		<p>
-			&nbsp;</p>
+			</p>
 	<p>
 	<asp:Button ID="Button2" runat="server" Text="Example Problems"  class="button" PostBackUrl="/Examples/Section2" padding="2px"/>
 	<asp:Button ID="Button3" runat="server" Text="Next Chapter"  class="button" PostBackUrl="Section3" padding ="2px"/>

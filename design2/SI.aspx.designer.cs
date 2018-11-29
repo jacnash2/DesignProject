@@ -11,7 +11,7 @@ namespace design2
 {
 
 
-    public partial class WebForm8
-    {
-    }
+	public partial class WebForm8
+	{
+	}
 }

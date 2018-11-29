@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Section1.aspx.cs" Inherits="design2.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 	<p>
-		<asp:Label ID="LabelDarkMode" runat="server"></asp:Label>
+		<asp:Label ID="LabelDarkMode" runat="server" style="float: right;"></asp:Label>
 	</p>
 	<p>
 		Q1. The answer is A.

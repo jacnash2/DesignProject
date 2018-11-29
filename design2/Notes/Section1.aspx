@@ -1,11 +1,8 @@
 ﻿<%@ Page Title="Circuit Variables and Elements" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Section1.aspx.cs" Inherits="design2.Notes.Section1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-	<p>
-	<br />
-</p>
-<p>
-		In circuit analysis, the following abbreviations are used frequently:<br />
-		<br />V = voltage<br />
+		<br />
+	<br>	In circuit analysis, the following abbreviations are used frequently:<br />
+		<br>V = voltage<br />
 		I = current<br />
 		R = resistance<br />
 		<br />
@@ -27,9 +24,10 @@
 		<br />
 		<strong>R = V / I</strong><br />
 		<br />
-		These three equations are used constantly during circuit analysis, so it is highly recommended that you memorize them so you don&#39;t have to constantly look them up and so you don&#39;t get them mixed up. If you are good with algebra, you should be able to just memorize one of them and then manipulate it to suit the problem you are currently working on.</p>
-<p>
+		These three equations are used constantly during circuit analysis, so it is highly recommended that you memorize them so you don&#39;t have to constantly look them up and so you don&#39;t get them mixed up. If you are good with algebra, you should be able to just memorize one of them and then manipulate it to suit the problem you are currently working on.
+		<br />
+		<br />
+<br />
 	<asp:Button ID="Button2" runat="server" Text="Example Problems"  class="button" PostBackUrl="/Examples/Section1" padding="2px"/>
 	<asp:Button ID="Button3" runat="server" Text="Next Chapter"  class="button" PostBackUrl="Section2" padding ="2px"/>
-</p>
 </asp:Content>
