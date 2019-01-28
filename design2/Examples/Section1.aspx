@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Section1.aspx.cs" Inherits="design2.WebForm7" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Section1.aspx.cs" Inherits="design2.Section1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 		<div>
 			<asp:Button ID="Button2" runat="server" PostBackUrl="~/Notes/Section1" Text="Back to Notes" class="button"/>
@@ -24,9 +24,30 @@
 			<br />
 			Answer: 10 V / 2 A = <strong>5 Ω</strong><br />
 			<br />
+			VIR Calculator:<br />
+			<br />
+			<asp:TextBox ID="txtLine1Amps" runat="server" Width="60px" class="button"></asp:TextBox>
+			Amps *
+			<asp:TextBox ID="txtLine1Ohms" runat="server" Width="60px" class="button"></asp:TextBox>
+			Ohms =
+			<asp:Label ID="lblVolts" runat="server" BorderStyle="Solid" BorderWidth="1px"> </asp:Label>
+&nbsp;<asp:Button ID="btnLine1" runat="server" Text="Submit" OnClick="btnLine1_Click" class="button"/>
 			<br />
 			<br />
+			<asp:TextBox ID="txtLine2Volts" runat="server" Width="60px" class="button"></asp:TextBox>
+			Volts /
+			<asp:TextBox ID="txtLine2Ohms" runat="server" Width="60px" class="button"></asp:TextBox>
+			Ohms =
+			<asp:Label ID="lblAmps" runat="server" BorderStyle="Solid" BorderWidth="1px"></asp:Label>
+			&nbsp;<asp:Button ID="btnLine2" runat="server" Text="Submit" OnClick="btnLine2_Click" class="button"/>
 			<br />
+			<br />
+			<asp:TextBox ID="txtLine3Volts" runat="server" Width="60px" class="button"></asp:TextBox>
+			Volts /
+			<asp:TextBox ID="txtLine3Amps" runat="server" Width="60px" class="button"></asp:TextBox>
+			Amps =&nbsp;
+			<asp:Label ID="lblOhms" runat="server" BorderStyle="Solid" BorderWidth="1px"></asp:Label>
+			&nbsp;<asp:Button ID="btnLine3" runat="server" Text="Submit" OnClick="btnLine3_Click" class="button"/>
 			<br />
 			<br />
         </div>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Section2.aspx.cs" Inherits="design2.WebForm7" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Section2.aspx.cs" Inherits="design2.Section2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
         <div>
 			<asp:Button ID="Button2" runat="server" PostBackUrl="~/Notes/Section2" Text="Back to Notes" class="button"/>

@@ -8,11 +8,10 @@ using design2.Classes;
 
 namespace design2
 {
-	public partial class WebForm2 : System.Web.UI.Page
+	public partial class Section1 : System.Web.UI.Page
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-			if (Styles.DarkModeIsOff) LabelDarkMode.Text = "Dark mode does not apply to quiz pages.";
 		}
 
 		int correct = 0;

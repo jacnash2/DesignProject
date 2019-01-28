@@ -21,7 +21,7 @@
             <tr>
                 <td style="height: 15px; width: 80px;">Volt</td>
                 <td style="height: 15px; width: 96px;">V</td>
-                <td style="height: 15px">Electric Poetntial</td>
+                <td style="height: 15px">Electric Potential</td>
             </tr>
             <tr>
                 <td style="width: 80px">ohm</td>
