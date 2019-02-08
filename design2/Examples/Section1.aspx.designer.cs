@@ -22,6 +22,15 @@ namespace design2 {
         protected global::System.Web.UI.WebControls.Button Button2;
         
         /// <summary>
+        /// listDecimalPlaces control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList listDecimalPlaces;
+        
+        /// <summary>
         /// txtLine1Amps control.
         /// </summary>
         /// <remarks>
@@ -47,15 +56,6 @@ namespace design2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblVolts;
-        
-        /// <summary>
-        /// btnLine1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLine1;
         
         /// <summary>
         /// txtLine2Volts control.
@@ -85,15 +85,6 @@ namespace design2 {
         protected global::System.Web.UI.WebControls.Label lblAmps;
         
         /// <summary>
-        /// btnLine2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLine2;
-        
-        /// <summary>
         /// txtLine3Volts control.
         /// </summary>
         /// <remarks>
@@ -121,12 +112,12 @@ namespace design2 {
         protected global::System.Web.UI.WebControls.Label lblOhms;
         
         /// <summary>
-        /// btnLine3 control.
+        /// Button4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLine3;
+        protected global::System.Web.UI.WebControls.Button Button4;
     }
 }

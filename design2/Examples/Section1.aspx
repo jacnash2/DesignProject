@@ -24,30 +24,46 @@
 			<br />
 			Answer: 10 V / 2 A = <strong>5 Ω</strong><br />
 			<br />
-			VIR Calculator:<br />
+			<br />
+			<p class="header">VIR Calculator:</p><br />
+			Answer rounded to this many decimal places:
+			<asp:DropDownList ID="listDecimalPlaces" runat="server">
+				<asp:ListItem>0</asp:ListItem>
+				<asp:ListItem>1</asp:ListItem>
+				<asp:ListItem>2</asp:ListItem>
+				<asp:ListItem>3</asp:ListItem>
+				<asp:ListItem>4</asp:ListItem>
+				<asp:ListItem>5</asp:ListItem>
+				<asp:ListItem>6</asp:ListItem>
+				<asp:ListItem>7</asp:ListItem>
+				<asp:ListItem>8</asp:ListItem>
+				<asp:ListItem>9</asp:ListItem>
+				<asp:ListItem>10</asp:ListItem>
+			</asp:DropDownList>
+			<br />
 			<br />
 			<asp:TextBox ID="txtLine1Amps" runat="server" Width="60px" class="button"></asp:TextBox>
 			Amps *
 			<asp:TextBox ID="txtLine1Ohms" runat="server" Width="60px" class="button"></asp:TextBox>
 			Ohms =
 			<asp:Label ID="lblVolts" runat="server" BorderStyle="Solid" BorderWidth="1px"> </asp:Label>
-&nbsp;<asp:Button ID="btnLine1" runat="server" Text="Submit" OnClick="btnLine1_Click" class="button"/>
-			<br />
+&nbsp;<br />
 			<br />
 			<asp:TextBox ID="txtLine2Volts" runat="server" Width="60px" class="button"></asp:TextBox>
 			Volts /
 			<asp:TextBox ID="txtLine2Ohms" runat="server" Width="60px" class="button"></asp:TextBox>
 			Ohms =
 			<asp:Label ID="lblAmps" runat="server" BorderStyle="Solid" BorderWidth="1px"></asp:Label>
-			&nbsp;<asp:Button ID="btnLine2" runat="server" Text="Submit" OnClick="btnLine2_Click" class="button"/>
-			<br />
+			&nbsp;<br />
 			<br />
 			<asp:TextBox ID="txtLine3Volts" runat="server" Width="60px" class="button"></asp:TextBox>
 			Volts /
 			<asp:TextBox ID="txtLine3Amps" runat="server" Width="60px" class="button"></asp:TextBox>
 			Amps =&nbsp;
 			<asp:Label ID="lblOhms" runat="server" BorderStyle="Solid" BorderWidth="1px"></asp:Label>
-			&nbsp;<asp:Button ID="btnLine3" runat="server" Text="Submit" OnClick="btnLine3_Click" class="button"/>
+			&nbsp;<br />
+			<br />
+			<asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Submit" />
 			<br />
 			<br />
         </div>
