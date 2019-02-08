@@ -14,12 +14,12 @@ namespace design2
 		{
 			if (Styles.DarkModeIsOff) this.Theme = "DarkMode";
 			else this.Theme = "LightMode";
-//			listDecimalPlaces.SelectedValue = "2";
 		}
 
-//		protected void Page_Load(object sender, EventArgs e)
-//		{
-//		}
+		public void Page_InitComplete()
+		{
+			listDecimalPlaces.SelectedValue = "3";
+		}
 
 		protected void calculateVolts()
 		{
@@ -50,7 +50,6 @@ namespace design2
 
 		protected void Button4_Click(object sender, EventArgs e)
 		{
-//			if (!txtBoxDecimalPlaces.Text.Equals("")) Styles.DecimalPlaces = Convert.ToInt16(txtBoxDecimalPlaces.Text);
 			if (!txtLine1Amps.Text.Equals("")&& (!txtLine1Ohms.Text.Equals(""))) calculateVolts();
 			if (!txtLine2Volts.Text.Equals("") && (!txtLine2Ohms.Text.Equals(""))) calculateAmps();
 			if (!txtLine3Volts.Text.Equals("") && (!txtLine3Amps.Text.Equals(""))) calculateOhms();

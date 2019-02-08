@@ -33,7 +33,7 @@
 						</tr>
 						<tr>
 							<td style="text-align: center;">
-								<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="Notes/Section2">Section 2</asp:HyperLink>
+								<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="Notes/Section2">Resistors in Series and Parallel</asp:HyperLink>
 							</td>
 							<td style="text-align: center;">
 								<asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="Examples/Section2">Example Problems</asp:HyperLink>
@@ -43,31 +43,28 @@
 						</tr>
 						<tr>
 							<td style="text-align: center;">
-								<asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="Notes/Section3">Section 3</asp:HyperLink>
+								<asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="Notes/Section3">Kirchoff&#39;s Laws</asp:HyperLink>
 							</td>
 							<td style="text-align: center;"></td>
 							<td style="text-align: center;"></td>
 							<td style="text-align: center;"></td>
 						</tr>
 						<tr>
-							<td style="text-align: center;">
-								<asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="Notes/Section4">Section 4</asp:HyperLink>
-							</td>
+							<td style="text-align: center;" class="text-primary">
+								<a href="Notes/Section4">Voltage and Current Divis</a>ion</td>
 							<td style="text-align: center;">&nbsp;</td>
 							<td style="text-align: center;">&nbsp;</td>
 							<td style="text-align: center;">&nbsp;</td>
 						</tr>
 						<tr>
-							<td style="text-align: center;">
-								<asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="Notes/Section5"> Section 5</asp:HyperLink>
-							</td>
+							<td style="text-align: center;" class="text-primary">
+								<a href="Notes/Section5">Node Voltage</a> Analysis</td>
 							<td style="text-align: center;">&nbsp;</td>
 							<td style="text-align: center;">&nbsp;</td>
 							<td style="text-align: center;">&nbsp;</td>
 						</tr>
 						<tr>
-							<td style="text-align: center;">&nbsp;<asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="Notes/Section6">Section 6</asp:HyperLink>
-							</td>
+							<td style="text-align: center;">&nbsp;<span class="text-primary"><a href="Notes/Section6">Mesh Current Analysis</a></span></td>
 							<td style="text-align: center;">&nbsp;</td>
 							<td style="text-align: center;">&nbsp;</td>
 							<td style="text-align: center;">&nbsp;</td>
