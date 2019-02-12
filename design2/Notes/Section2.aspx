@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Section 2" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Section1.aspx.cs" Inherits="design2.WebForm3" %>
+﻿<%@ Page Title="Resistors in Series/Parallel" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Section1.aspx.cs" Inherits="design2.WebForm3" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 	<p>
 		<asp:Button ID="Button4" runat="server" PostBackUrl="Section1" Text="Last Section" class="button"/>

@@ -28,7 +28,7 @@
 							</td>
 							<td style="text-align: center;"></td>
 							<td style="text-align: center;">
-								<asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="Quiz/Section1">Quiz 1</asp:HyperLink>
+								<asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="Quiz/Section1">Practice Quiz</asp:HyperLink>
 							</td>
 						</tr>
 						<tr>
@@ -39,56 +39,86 @@
 								<asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="Examples/Section2">Example Problems</asp:HyperLink>
 							</td>
 							<td style="text-align: center;">&nbsp;</td>
-							<td style="text-align: center;">&nbsp;</td>
+							<td style="text-align: center;">
+								<asp:HyperLink ID="HyperLink15" runat="server" NavigateUrl="Quiz/Section2">Practice Quiz</asp:HyperLink>
+							</td>
 						</tr>
 						<tr>
 							<td style="text-align: center;">
 								<asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="Notes/Section3">Kirchoff&#39;s Laws</asp:HyperLink>
 							</td>
+							<td style="text-align: center;">
+								<asp:HyperLink ID="HyperLink16" runat="server">Example Problems</asp:HyperLink>
+							</td>
 							<td style="text-align: center;"></td>
-							<td style="text-align: center;"></td>
-							<td style="text-align: center;"></td>
+							<td style="text-align: center;">
+								<asp:HyperLink ID="HyperLink23" runat="server">Practice Quiz</asp:HyperLink>
+							</td>
 						</tr>
 						<tr>
 							<td style="text-align: center;" class="text-primary">
 								<a href="Notes/Section4">Voltage and Current Divis</a>ion</td>
+							<td style="text-align: center;">
+								<asp:HyperLink ID="HyperLink17" runat="server">Example Problems</asp:HyperLink>
+							</td>
 							<td style="text-align: center;">&nbsp;</td>
-							<td style="text-align: center;">&nbsp;</td>
-							<td style="text-align: center;">&nbsp;</td>
+							<td style="text-align: center;">
+								<asp:HyperLink ID="HyperLink24" runat="server">Practice Quiz</asp:HyperLink>
+							</td>
 						</tr>
 						<tr>
 							<td style="text-align: center;" class="text-primary">
 								<a href="Notes/Section5">Node Voltage</a> Analysis</td>
+							<td style="text-align: center;">
+								<asp:HyperLink ID="HyperLink18" runat="server">Example Problems</asp:HyperLink>
+							</td>
 							<td style="text-align: center;">&nbsp;</td>
-							<td style="text-align: center;">&nbsp;</td>
-							<td style="text-align: center;">&nbsp;</td>
+							<td style="text-align: center;">
+								<asp:HyperLink ID="HyperLink25" runat="server">Practice Quiz</asp:HyperLink>
+							</td>
 						</tr>
 						<tr>
 							<td style="text-align: center;">&nbsp;<span class="text-primary"><a href="Notes/Section6">Mesh Current Analysis</a></span></td>
+							<td style="text-align: center;">
+								<asp:HyperLink ID="HyperLink19" runat="server">Example Problems</asp:HyperLink>
+							</td>
 							<td style="text-align: center;">&nbsp;</td>
-							<td style="text-align: center;">&nbsp;</td>
-							<td style="text-align: center;">&nbsp;</td>
+							<td style="text-align: center;">
+								<asp:HyperLink ID="HyperLink26" runat="server">Practice Quiz</asp:HyperLink>
+							</td>
 						</tr>
 						<tr>
 							<td style="text-align: center;">&nbsp;<asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="Notes/Section7">Section 7</asp:HyperLink>
 							</td>
+							<td style="text-align: center;">
+								<asp:HyperLink ID="HyperLink20" runat="server">Example Problems</asp:HyperLink>
+							</td>
 							<td style="text-align: center;">&nbsp;</td>
-							<td style="text-align: center;">&nbsp;</td>
-							<td style="text-align: center;">&nbsp;</td>
+							<td style="text-align: center;">
+								<asp:HyperLink ID="HyperLink27" runat="server">Practice Quiz</asp:HyperLink>
+							</td>
 						</tr>
 						<tr>
 							<td style="text-align: center;">&nbsp;<asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="Notes/Section8">Section 8</asp:HyperLink>
 							</td>
+							<td style="text-align: center;">
+								<asp:HyperLink ID="HyperLink21" runat="server">Example Problems</asp:HyperLink>
+							</td>
 							<td style="text-align: center;">&nbsp;</td>
-							<td style="text-align: center;">&nbsp;</td>
-							<td style="text-align: center;">&nbsp;</td>
+							<td style="text-align: center;">
+								<asp:HyperLink ID="HyperLink28" runat="server">Practice Quiz</asp:HyperLink>
+							</td>
 						</tr>
 						<tr>
 							<td style="text-align: center;">&nbsp;<asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="Notes/Section9">Section 9</asp:HyperLink>
 							</td>
+							<td style="text-align: center;">
+								<asp:HyperLink ID="HyperLink22" runat="server">Example Problems</asp:HyperLink>
+							</td>
 							<td style="text-align: center;">&nbsp;</td>
-							<td style="text-align: center;">&nbsp;</td>
-							<td style="text-align: center;">&nbsp;</td>
+							<td style="text-align: center;">
+								<asp:HyperLink ID="HyperLink29" runat="server">Practice Quiz</asp:HyperLink>
+							</td>
 						</tr>
 					</table>
 				</td>

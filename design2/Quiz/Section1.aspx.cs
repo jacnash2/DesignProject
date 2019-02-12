@@ -8,7 +8,7 @@ using design2.Classes;
 
 namespace design2
 {
-	public partial class Section1 : System.Web.UI.Page
+	public partial class Section1Quiz : System.Web.UI.Page
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
@@ -18,7 +18,7 @@ namespace design2
 
 		protected void Button1_Click1(object sender, EventArgs e)
 		{
-			if (RadioButtonList1.SelectedValue == "A")
+			if (RadioButtonList1.SelectedValue == "The current will increase.")
 			{
 				Label1.Text = "\u2713";
 				Label1.ForeColor = System.Drawing.Color.Green;
@@ -29,7 +29,7 @@ namespace design2
 				Label1.Text = "x";
 				Label1.ForeColor = System.Drawing.Color.DarkRed;
 			}
-			if (TextBox1.Text.Trim() == "B" || TextBox1.Text.Trim() == "b")
+			if (RadioButtonList2.SelectedValue == "The current will decrease.")
 			{
 				Label2.Text = "\u2713";
 				Label2.ForeColor = System.Drawing.Color.Green;
@@ -40,7 +40,29 @@ namespace design2
 				Label2.Text = "x";
 				Label2.ForeColor = System.Drawing.Color.DarkRed;
 			}
-			LabelOutput.Text = correct + " correct out of " + 2 + " questions";
+			if (TextBox1.Text.Trim() == "50")
+			{
+				Label3.Text = "\u2713";
+				Label3.ForeColor = System.Drawing.Color.Green;
+				correct++;
+			}
+			else
+			{
+				Label3.Text = "x";
+				Label3.ForeColor = System.Drawing.Color.DarkRed;
+			}
+			if (TextBox2.Text.Trim() == "25")
+			{
+				Label4.Text = "\u2713";
+				Label4.ForeColor = System.Drawing.Color.Green;
+				correct++;
+			}
+			else
+			{
+				Label4.Text = "x";
+				Label4.ForeColor = System.Drawing.Color.DarkRed;
+			}
+			LabelOutput.Text = correct + " correct out of " + 4;
 		}
 	}
 }

@@ -1,33 +1,62 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Section2.aspx.cs" Inherits="design2.Section2" %>
+﻿<%@ Page Title="Resistors in Series/Parallel: Examples" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Section2.aspx.cs" Inherits="design2.Section2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-        <div>
+		<div>
 			<asp:Button ID="Button2" runat="server" PostBackUrl="~/Notes/Section2" Text="Back to Notes" class="button"/>
         	<br />
 			<br />
-			Example 1:<br />
+			<p class="header">Interactive Examples<p />
 			<br />
-			There is a current of 3 amps passing through a 20 ohm resistor. How much voltage drop is across the resistor?<br />
+			Answers rounded to this many decimal places:
+			<asp:DropDownList ID="DropDownList1" runat="server" class="button">
+				<asp:ListItem>0</asp:ListItem>
+				<asp:ListItem>1</asp:ListItem>
+				<asp:ListItem>2</asp:ListItem>
+				<asp:ListItem>3</asp:ListItem>
+				<asp:ListItem>4</asp:ListItem>
+				<asp:ListItem>5</asp:ListItem>
+				<asp:ListItem>6</asp:ListItem>
+				<asp:ListItem>7</asp:ListItem>
+				<asp:ListItem>8</asp:ListItem>
+				<asp:ListItem>9</asp:ListItem>
+			</asp:DropDownList>
+        	<br />
 			<br />
-			Answer: 3 A * 20 Ω = <strong>60 V</strong>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<asp:TextBox ID="TextBox1" runat="server" Width="65px" class="button"></asp:TextBox>
+			Ω&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<asp:TextBox ID="TextBox2" runat="server" Width="66px" class="button"></asp:TextBox>
+			Ω<br />
+			<img alt="" src="../Pictures/eq1b.jpg" style="width: 561px; height: 208px" /><asp:TextBox ID="TextBox3" runat="server" Width="67px" class="button"></asp:TextBox>
+			Ω<br />
+			<p />
+				&nbsp;&nbsp;<asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Calculate Equivalent Resistance" Width="271px" class="button"/>
+&nbsp;&nbsp;&nbsp;
+			<asp:Label ID="Label1" runat="server"></asp:Label>
+			<br />
+			<p />
+			<br />
+			<img alt="" src="../Pictures/eq2b.jpg" style="width: 606px; height: 229px" /><br />
+			Set values for the resistors:&nbsp; R1 =
+			<asp:TextBox ID="TextBox4" runat="server" Width="65px" class="button"></asp:TextBox>
+&nbsp;&nbsp;&nbsp; R2 =
+			<asp:TextBox ID="TextBox5" runat="server" Width="66px" class="button"></asp:TextBox>
+&nbsp;&nbsp;&nbsp; R3 =
+			<asp:TextBox ID="TextBox6" runat="server" Width="67px" class="button"></asp:TextBox>
 			<br />
 			<br />
-			Example 2:<br />
+			<asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Calculate Equivalent Resistance" Width="274px" class="button"/>
+&nbsp;&nbsp;&nbsp;
+			<asp:Label ID="Label2" runat="server"></asp:Label>
 			<br />
-			A voltage source of 5 volts passes a current through a resistor with resistance of 50 ohms. How much current passes through the circuit?<br />
-			<br />
-			Answer: 5 V / 50 Ω = <strong>0.1 A</strong> (or <strong>100 mA</strong>)
-			<br />
-			<br />
-			Example 3:<br />
-			<br />
-			A current of 2 amps comes from a voltage source with 10 volts. How much resistance is in the circuit?<br />
-			<br />
-			Answer: 10 V / 2 A = <strong>5 Ω</strong><br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
+			<p />
+				&nbsp;<p />
+				<p class="header">Example Problem<p />
+			<img alt="" src="../Pictures/eq5.png" style="width: 734px; height: 310px" /><p />
+				For this problem, you have a 100Ω resistor in parrallel with a 200Ω resistor. These resistors are then in series with a 300Ω resistor. Then, this set of three resistors is in series with the 500Ω resistor and 400Ω resistor, which are in parallel with each other.<p />
+				This set of resistors can then be written as Req = (100|200)+300+(500|400).<p />
+				100|200 = 1/(1/100 + 1/200) = 66.667<p />
+				500|400 = 1/(1/500 + 1/400) = 222.222<p />
+				Then, we&#39;re left with Req = 66.667 + 300 + 222.222 = <strong>588.889Ω</strong><br />
 			<br />
         </div>
 

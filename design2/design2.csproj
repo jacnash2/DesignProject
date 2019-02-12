@@ -145,7 +145,20 @@
     <Content Include="Default.aspx" />
     <Content Include="Notes\Section1.aspx" />
     <Content Include="Notes\Section3.aspx" />
-    <Content Include="Pictures\current.jpg" />
+    <Content Include="Pictures\1.png" />
+    <Content Include="Pictures\10.png" />
+    <Content Include="Pictures\11.png" />
+    <Content Include="Pictures\12.png" />
+    <Content Include="Pictures\13.png" />
+    <Content Include="Pictures\14.png" />
+    <Content Include="Pictures\2.png" />
+    <Content Include="Pictures\3.png" />
+    <Content Include="Pictures\4.png" />
+    <Content Include="Pictures\5.png" />
+    <Content Include="Pictures\6.png" />
+    <Content Include="Pictures\7.png" />
+    <Content Include="Pictures\8.png" />
+    <Content Include="Pictures\9.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -171,7 +184,17 @@
     <Content Include="Notes\Section9.aspx" />
     <Content Include="Examples\Section1.aspx" />
     <Content Include="Examples\Section2.aspx" />
+    <Content Include="Pictures\eq1.png" />
+    <Content Include="Pictures\eq1b.jpg" />
+    <Content Include="Pictures\eq2.png" />
+    <Content Include="Pictures\eq2b.jpg" />
+    <Content Include="Pictures\eq3.png" />
+    <Content Include="Pictures\eq4.png" />
+    <Content Include="Pictures\eq5.png" />
+    <Content Include="Pictures\g1.png" />
+    <Content Include="Pictures\g2.png" />
     <Content Include="Quiz\Section1.aspx" />
+    <Content Include="Quiz\Section2.aspx" />
     <Content Include="SI.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -251,6 +274,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quiz\Section2.aspx.cs">
+      <DependentUpon>Section2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quiz\Section2.aspx.designer.cs">
+      <DependentUpon>Section2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
