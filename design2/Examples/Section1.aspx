@@ -49,7 +49,7 @@
 		Note: This calculator automatically adjusts units based on the values. For example, if current is larger than
 		<br />
 		1 amp, it gives the answer in amps, but if current is smaller than 1 amp, it gives the answer in milliamps.<br />
-		So, when you&#39;re using this calculator, make sure you copy the correct unit or you&#39;ll have the wrong answer.
+		So, when you're using this calculator, make sure you copy the correct unit or you might have the wrong answer.
 		<br />
 		<br />
 		<p class="header">Example Problems<p />

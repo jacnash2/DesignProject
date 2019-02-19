@@ -3,6 +3,8 @@
 	<p>
 	<img alt="" src="../Pictures/eq3.png" style="width: 731px; height: 364px" /></p>
 <p>
+	Q1.</p>
+	<p>
 	What is the equivalent resistance for the above circuit?
 	<asp:Label ID="Label1" runat="server"></asp:Label>
 	</p>
@@ -18,9 +20,9 @@
 	<asp:TextBox ID="TextBox1" runat="server" Width="71px" class="button"></asp:TextBox>
 	Ω</p>
 <p>
-	&nbsp;</p>
-<p>
-	<img alt="" src="../Pictures/eq1.png" style="width: 704px; height: 320px" /></p>
+	<img alt="" src="../Pictures/eq1.png" style="width: 759px; height: 353px" /></p>
+	<p>
+		Q2.</p>
 <p>
 	What is the equivalent resistance for the above circuit?
 	<asp:Label ID="Label2" runat="server"></asp:Label>
