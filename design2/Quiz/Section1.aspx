@@ -45,23 +45,27 @@
 			<asp:ListItem>A</asp:ListItem>
 			<asp:ListItem>mA</asp:ListItem>
 		</asp:DropDownList>
-&nbsp;<asp:Label ID="Label5" runat="server" class="quiz"></asp:Label>
+&nbsp;<asp:Label ID="Label3" runat="server"></asp:Label>
 	</p>
 	<p>
 		</p>
 	<p>
-		Q4. There is a voltage drop of 5 volts across a resistor with 100 mA of current flowing through it, what is the resistance of the resistor? <asp:Label ID="Label3" runat="server"></asp:Label>
+		Q4. There is a voltage drop of 
+		<asp:Label ID="LblQ4Volts" runat="server"></asp:Label>
+		volts across a resistor with 
+		<asp:Label ID="LblQ4Current" runat="server"></asp:Label>
+		mA of current flowing through it, what is the resistance of the resistor? <asp:Label ID="Label4" runat="server"></asp:Label>
 	</p>
 	<p>
-		<asp:TextBox ID="TextBox1" runat="server" Width="60px" class="button"></asp:TextBox>
+		<asp:TextBox ID="TextBox4" runat="server" Width="60px" class="button"></asp:TextBox>
 		Ω</p>
 	<p>
 		&nbsp;</p>
 	<p>
-		Q5. If you took the resistor from Q3. and replaced it with a 200Ω resistor, what would be the new current flowing through it? <asp:Label ID="Label4" runat="server"></asp:Label>
+		Q5. If you took the resistor from Q3. and replaced it with a 200Ω resistor, what would be the new current flowing through it? <asp:Label ID="Label5" runat="server" class="quiz"></asp:Label>
 	</p>
 	<p>
-		<asp:TextBox ID="TextBox2" runat="server" Width="61px" class="button"></asp:TextBox>
+		<asp:TextBox ID="TextBox5" runat="server" Width="61px" class="button"></asp:TextBox>
 		mA</p>
 	<p>
 		&nbsp;</p>

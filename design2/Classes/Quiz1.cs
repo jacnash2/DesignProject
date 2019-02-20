@@ -8,6 +8,32 @@ namespace design2.Classes
 	public static class Quiz1
 	{
 		private static double _q3Vin, _q3R;
+		public static int _q4Volts, _q4mA;
+		public static int Q4Volts
+		{
+			get { return _q4Volts; }
+			set { _q4Volts = value; }
+		}
+		public static int Q4mA
+		{
+			get { return _q4mA; }
+			set { _q4mA = value; }
+		}
+		public static int Q4ans
+		{
+			get { return _q4Volts * 1000 / _q4mA; }
+		}
+		//returns an array of acceptable answers (size 2)
+		public static int[] Q5ans
+		{
+			get
+			{
+				int[] Q5ans = new int[2];
+				Q5ans[0] = Q4mA * Q4ans / 200;//smallest acceptable answer
+				Q5ans[1] = Q4mA * (Q4ans + 1) / 200;//largest acceptable answer
+				return Q5ans;
+			}
+		}
 		public static double Q3Vin {
 			get { return _q3Vin; }
 			set { _q3Vin = value; }
