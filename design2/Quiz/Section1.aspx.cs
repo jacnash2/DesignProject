@@ -15,7 +15,7 @@ namespace design2
 
 		protected void Page_Load(object sender, EventArgs e)
 		{
-			//This is needed so it doesn't generate new random numbers each time a button is pressed.
+			//IsPostBack means "isRefreshed," so this stuff only happens the first time the page loads, not on each refresh.
 			if (!IsPostBack)
 			{
 				Q3Vin = rand.Next(50) + 1;//1 to 50
@@ -43,6 +43,16 @@ namespace design2
 		}
 
 		int correct = 0;
+		//round answer to 2 significant figures
+		//currently only works for values from 0.0001 to 10
+		public double RoundAnswer(double answer)
+		{
+			if (answer > 1) return Math.Round(answer, 1, MidpointRounding.AwayFromZero);
+			else if (answer > 0.1) return Math.Round(answer, 2, MidpointRounding.AwayFromZero);
+			else if (answer > 0.01) return Math.Round(answer, 3, MidpointRounding.AwayFromZero);
+			else if (answer > 0.001) return Math.Round(answer, 4, MidpointRounding.AwayFromZero);
+			else return Math.Round(answer, 5, MidpointRounding.AwayFromZero);
+		}
 
 		protected void Button1_Click1(object sender, EventArgs e)
 		{
@@ -71,9 +81,11 @@ namespace design2
 				Label2.ForeColor = System.Drawing.Color.DarkRed;
 			}
 			//question 3
-			if (Q3unit.SelectedValue == "A")
+			double Q3ans = Convert.ToDouble(TextBox3.Text.Trim());
+			Q3ans = RoundAnswer(Q3ans);
+			if (Q3unit.SelectedValue == "A")//user gave the answer in Amps
 			{
-				if (Convert.ToDouble(TextBox3.Text.Trim()) <= Quiz1.Q3ansCeiling && Convert.ToDouble(TextBox3.Text.Trim()) >= Quiz1.Q3ansFloor)
+				if (Q3ans == Quiz1.Q3ansRounded)
 				{ //answer is correct
 					Label5.Text = "\u2713";
 					Label5.ForeColor = System.Drawing.Color.Green;
@@ -87,7 +99,8 @@ namespace design2
 			}
 			else //selected value == "mA"
 			{
-				if ((Convert.ToDouble(TextBox3.Text.Trim()) / 1000) <= Quiz1.Q3ansCeiling && (Convert.ToDouble(TextBox3.Text.Trim()) / 1000) >= Quiz1.Q3ansFloor)
+				Q3ans = Q3ans / 1000;//convert mA to A
+				if (Q3ans == Quiz1.Q3ansRounded)
 				{ //answer is correct
 					Label5.Text = "\u2713";
 					Label5.ForeColor = System.Drawing.Color.Green;
@@ -95,7 +108,7 @@ namespace design2
 				}
 				else
 				{
-					Label5.Text = Quiz1.Q3ans.ToString();
+					Label5.Text = "x";
 					Label5.ForeColor = System.Drawing.Color.DarkRed;
 				}
 			}
