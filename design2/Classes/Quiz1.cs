@@ -8,30 +8,64 @@ namespace design2.Classes
 	public static class Quiz1
 	{
 		private static double _q3Vin, _q3R;
-		public static int _q4Volts, _q4mA;
-		public static int Q4Volts
+		public static int _q6Volts, _q6mA, _q7R, _Q4V, _Q4mA, _Q5Ohms, _Q5mA;
+		
+		public static int Q4V
 		{
-			get { return _q4Volts; }
-			set { _q4Volts = value; }
+			get { return _Q4V; }
+			set { _Q4V = value; }
 		}
 		public static int Q4mA
 		{
-			get { return _q4mA; }
-			set { _q4mA = value; }
+			get { return _Q4mA; }
+			set { _Q4mA = value; }
+		}
+		public static int Q5Ohms
+		{
+			get { return _Q5Ohms; }
+			set { _Q5Ohms = value; }
+		}
+		public static int Q5mA
+		{
+			get { return _Q5mA; }
+			set { _Q5mA = value; }
 		}
 		public static int Q4ans
 		{
-			get { return _q4Volts * 1000 / _q4mA; }
+			get { return _Q4V * 1000 / _Q4mA; }
+		}
+		public static int Q5ans
+		{
+			get { return _Q5Ohms * _Q5mA / 1000; }
+		}
+		public static int Q7R
+		{
+			get { return _q7R; }
+			set { _q7R = value; }
+		}
+		public static int Q6Volts
+		{
+			get { return _q6Volts; }
+			set { _q6Volts = value; }
+		}
+		public static int Q6mA
+		{
+			get { return _q6mA; }
+			set { _q6mA = value; }
+		}
+		public static int Q6ans
+		{
+			get { return _q6Volts * 1000 / _q6mA; }
 		}
 		//returns an array of acceptable answers (size 2)
-		public static int[] Q5ans
+		public static int[] Q7ans
 		{
 			get
 			{
-				int[] Q5ans = new int[2];
-				Q5ans[0] = Q4mA * Q4ans / 200;//smallest acceptable answer
-				Q5ans[1] = Q4mA * (Q4ans + 1) / 200;//largest acceptable answer
-				return Q5ans;
+				int[] Q7ans = new int[2];
+				Q7ans[0] = Q6mA * Q6ans / _q7R;//smallest acceptable answer
+				Q7ans[1] = Q6mA * (Q6ans + 1) / _q7R;//largest acceptable answer
+				return Q7ans;
 			}
 		}
 		public static double Q3Vin {

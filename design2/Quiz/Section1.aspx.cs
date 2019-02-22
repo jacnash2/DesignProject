@@ -11,13 +11,15 @@ namespace design2
 	public partial class Section1Quiz : System.Web.UI.Page
 	{
 		Random rand = new Random();
-		int Q3Vin, Q3R, RQ3scalar, Q4Volts, Q4mA;
+		int Q3Vin, Q3R, RQ3scalar, Q6Volts, Q6mA, Q4Volts, Q4mA, Q5Ohms, Q5mA, Q7R;
 
 		protected void Page_Load(object sender, EventArgs e)
 		{
 			//IsPostBack means "isRefreshed," so this stuff only happens the first time the page loads, not on each refresh.
 			if (!IsPostBack)
 			{
+				//question 3 stuff
+				//This is probably more complicated than it needs to be with the Rscalar and stuff like that.
 				Q3Vin = rand.Next(50) + 1;//1 to 50
 				RQ3scalar = rand.Next(2);//0 or 1
 				if (RQ3scalar == 0)//resistor is going to have a large value
@@ -32,17 +34,47 @@ namespace design2
 					lblRQ3.Text = Q3R + "Ω";
 				}
 				lblVinQ3.Text = Q3Vin + "V";
-				Q4Volts = rand.Next(50) + 1;//1 to 50
-				Q4mA = rand.Next(990) + 10;//10 mA to 1 A
-				LblQ4Volts.Text = Q4Volts.ToString();
-				LblQ4Current.Text = Q4mA.ToString();
+
+				//question 4 stuff
+				Q4Volts = rand.Next(46) + 5;//5 to 50
+				Q4mA = rand.Next(991) + 10;//10 to 1000
+				lblCurrentQ4.Text = Q4mA + "mA";
+				lblVinQ4.Text = Q4Volts + "V";
+
+				//question 5 stuff
+				Q5Ohms = (rand.Next(10) + 1) * 100;//100 to 1000
+				Q5mA = rand.Next(491) + 10;//10 to 500
+				lblCurrentQ5.Text = Q5Ohms+ "Ω";
+				lblRQ5.Text = Q5mA + "mA";
+				
+				//question 6 stuff
+				Q6Volts = rand.Next(50) + 1;//1 to 50
+				Q6mA = rand.Next(990) + 10;//10 mA to 1 A
+				LblQ6Volts.Text = Q6Volts.ToString();
+				LblQ6Current.Text = Q6mA.ToString();
+
+				//question 7 resistance
+				Q7R = (rand.Next(196) + 5) * 10;//50 to 2000
+				lblQ7R.Text=Q7R+ "Ω";
 
 				//These have to be set down here rather than above. I have no idea why.
-				Quiz1.Q4mA = Q4mA;
-				Quiz1.Q4Volts = Q4Volts;
+				//You need these values, because variables on this class will be reset to 0 on each page refresh.
+				Quiz1.Q6mA = Q6mA;
+				Quiz1.Q6Volts = Q6Volts;
 				Quiz1.Q3R = Q3R;
 				Quiz1.Q3Vin = Q3Vin;
+				Quiz1.Q7R = Q7R;
+				Quiz1.Q4mA = Q4mA;
+				Quiz1.Q4V = Q4Volts;
+				Quiz1.Q5mA = Q5mA;
+				Quiz1.Q5Ohms = Q5Ohms;
 			}
+		}
+
+		public void Page_PreInit()
+		{
+			if (Styles.DarkModeIsOff) this.Theme = "DarkMode";
+			else this.Theme = "LightMode";
 		}
 
 		public void Page_InitComplete()
@@ -67,96 +99,178 @@ namespace design2
 		{
 			//question 1
 			if (RadioButtonList1.SelectedValue == "The current will increase.")
-			{
-				Label1.Text = "\u2713";
+			{//answer is correct
+				Label1.Text = "\u2713";//output a green checkmark size 20
 				Label1.ForeColor = System.Drawing.Color.Green;
+				Label1.Font.Size = 20;
 				correct++;
 			}
 			else
 			{
-				Label1.Text = "x";
+				Label1.Text = "x";//output a red x size 20
 				Label1.ForeColor = System.Drawing.Color.DarkRed;
+				Label1.Font.Size = 20;
 			}
 			//question 2
 			if (RadioButtonList2.SelectedValue == "The current will decrease.")
-			{
-				Label2.Text = "\u2713";
+			{//answer is correct
+				Label2.Text = "\u2713";//output a green checkmark size 20
 				Label2.ForeColor = System.Drawing.Color.Green;
+				Label2.Font.Size = 20;
 				correct++;
 			}
 			else
 			{
-				Label2.Text = "x";
+				Label2.Text = "x";//output a red x size 20
 				Label2.ForeColor = System.Drawing.Color.DarkRed;
+				Label2.Font.Size = 20;
 			}
 			//question 3
 			//answer needs to be correct to two significant digits
-			double Q3ans = Convert.ToDouble(TextBox3.Text.Trim());
-			if (Q3unit.SelectedValue == "A")//user gave the answer in Amps
-			{
-				Q3ans = RoundAnswer(Q3ans);
-				if (Q3ans == Quiz1.Q3ansRounded)
-				{ //answer is correct
-					Label3.Text = "\u2713";
-					Label3.ForeColor = System.Drawing.Color.Green;
-					correct++;
-				}
-				else
-				{
-					Label3.Text = Quiz1.Q3ans.ToString();
-					Label3.ForeColor = System.Drawing.Color.DarkRed;
-				}
+			if (!Double.TryParse(TextBox3.Text, out double validate))
+			{//validation failed, user entered letters or special characters
+				Label3.Text = "Error: answer isn't correctly formatted";
+				Label3.ForeColor = System.Drawing.Color.DarkRed;
 			}
-			else //selected value == "mA"
-			{
-				Q3ans = Q3ans / 1000;//convert mA to A
-				Q3ans = RoundAnswer(Q3ans);
-				if (Q3ans == Quiz1.Q3ansRounded)
-				{ //answer is correct
-					Label3.Text = "\u2713";
-					Label3.ForeColor = System.Drawing.Color.Green;
-					correct++;
-				}
-				else
+			else
+			{//validation was successful
+				double Q3ans = Convert.ToDouble(TextBox3.Text);
+				if (Q3unit.SelectedValue == "A")//user gave the answer in Amps
 				{
-					Label3.Text = "x";
-					Label3.ForeColor = System.Drawing.Color.DarkRed;
+					Q3ans = RoundAnswer(Q3ans);
+					if (Q3ans == Quiz1.Q3ansRounded)
+					{ //answer is correct
+						Label3.Text = "\u2713";
+						Label3.ForeColor = System.Drawing.Color.Green;
+						Label3.Font.Size = 20;
+						correct++;
+					}
+					else
+					{
+						Label3.Text = Quiz1.Q3ans.ToString();
+						Label3.ForeColor = System.Drawing.Color.DarkRed;
+						Label3.Font.Size = 20;
+					}
+				}
+				else //selected value == "mA"
+				{
+					Q3ans = Q3ans / 1000;//convert mA to A
+					Q3ans = RoundAnswer(Q3ans);
+					if (Q3ans == Quiz1.Q3ansRounded)
+					{ //answer is correct
+						Label3.Text = "\u2713";//outputs a green checkmark size 20
+						Label3.ForeColor = System.Drawing.Color.Green;
+						Label3.Font.Size = 20;
+						correct++;
+					}
+					else
+					{
+						Label3.Text = "x";//outputs a red x size 20
+						Label3.ForeColor = System.Drawing.Color.DarkRed;
+						Label3.Font.Size = 20;
+					}
 				}
 			}
 			//question 4
 			//answer must be correct in integer form (doesn't care about decimal places)
-			if (Convert.ToInt16(TextBox4.Text.Trim()) == Quiz1.Q4ans || Convert.ToInt16(TextBox4.Text.Trim()) == (Quiz1.Q4ans + 1))
-			{//(Quiz1.Q4ans + 1) allows answers to be correct if user rounded up, so there are two acceptable answers here
-				Label4.Text = "\u2713";
-				Label4.ForeColor = System.Drawing.Color.Green;
-				correct++;
-			}
-			else
-			{
-				Label4.Text = "x";
+			if (!Double.TryParse(TextBox4.Text, out validate))
+			{//validation failed
+				Label4.Text = "Error: answer isn't correctly formatted";
 				Label4.ForeColor = System.Drawing.Color.DarkRed;
 			}
-			//question 5
-			int Q5ans = Convert.ToInt16(TextBox5.Text.Trim());
-			/*
-			 * Q5ansRounded[0] is the lowest acceptable answer
-			 * it's found using the old resistance (rounded down), old current, and new resistance
-			 * Q5ansRounded[1] is the highest acceptable answer
-			 * Q5ansRounded[1] is found using the old resistance (rounded up), old current, and new resistance
-			 * If the answer is found using the voltage from Q4 and the resistance from Q5, it should always lie between the two values.
-			*/
-			if (Q5ans >= Quiz1.Q5ans[0] && Q5ans <= Quiz1.Q5ans[1])
-			{
-				Label5.Text = "\u2713";
-				Label5.ForeColor = System.Drawing.Color.Green;
-				correct++;
-			}
 			else
-			{
-				Label5.Text = "x";
+			{//go from text to double, then round the double to nearest integer
+				if (Math.Round(Convert.ToDouble(TextBox4.Text)) == Quiz1.Q4ans || Math.Round(Convert.ToDouble(TextBox4.Text)) == (Quiz1.Q4ans + 1))
+				{//answer is correct within 1 integer value
+					Label4.Text = "\u2713";//output green checkmark size 20
+					Label4.ForeColor = System.Drawing.Color.Green;
+					Label4.Font.Size = 20;
+					correct++;
+				}
+				else
+				{//outputs red x size 20
+					Label4.Text = "x";
+					Label4.ForeColor = System.Drawing.Color.DarkRed;
+					Label4.Font.Size = 20;
+				}
+			}
+			//question 5
+			//answer must be correct in integer form (doesn't care about decimal places)
+			if (!Double.TryParse(TextBox5.Text, out validate))
+			{//validation failed
+				Label5.Text = "Error: answer isn't correctly formatted";
 				Label5.ForeColor = System.Drawing.Color.DarkRed;
 			}
-			LabelOutput.Text = correct + " correct out of " + 5;
+			else
+			{//same as above, from string to double and rounded to integer
+				if (Math.Round(Convert.ToDouble(TextBox5.Text)) == Quiz1.Q5ans || Math.Round(Convert.ToDouble(TextBox5.Text)) == (Quiz1.Q5ans + 1))
+				{//again, accepts rounded up or rounded down answers
+					Label5.Text = "\u2713";//outputs green checkmark size 20
+					Label5.ForeColor = System.Drawing.Color.Green;
+					Label5.Font.Size = 20;
+					correct++;
+				}
+				else
+				{//outputs red x size 20
+					Label5.Text = "x";
+					Label5.ForeColor = System.Drawing.Color.DarkRed;
+					Label5.Font.Size = 20;
+				}
+			}
+			//question 6
+			//answer must be correct in integer form (doesn't care about decimal places)
+			if (!Double.TryParse(TextBox6.Text, out validate))
+			{//validation failed,
+				Label6.Text = "Error: answer isn't correctly formatted";
+				Label6.ForeColor = System.Drawing.Color.DarkRed;
+			}
+			else
+			{//comparing double to integer, rounding for it to work
+				if (Math.Round(Convert.ToDouble(TextBox6.Text)) == Quiz1.Q6ans || Math.Round(Convert.ToDouble(TextBox6.Text)) == (Quiz1.Q6ans + 1))
+				{//(Quiz1.Q4ans + 1) allows answers to be correct if user rounded up, so there are two acceptable answers here
+					Label6.Text = "\u2713";//outputs green checkmark size 20
+					Label6.ForeColor = System.Drawing.Color.Green;
+					Label6.Font.Size = 20;
+					correct++;
+				}
+				else
+				{//outputs red x size 20
+					Label6.Text = "x";
+					Label6.ForeColor = System.Drawing.Color.DarkRed;
+					Label6.Font.Size = 20;
+				}
+			}
+			//question 7
+			if (!Double.TryParse(TextBox7.Text, out validate))
+			{//validation failed, user entered a nonnumber character
+				Label7.Text = "Error: answer isn't correctly formatted";
+				Label7.ForeColor = System.Drawing.Color.DarkRed;
+			}
+			else
+			{//conver to a double first, then convert to an integer. otherwise it'll crash when users use decimal places.
+				int Q5ans = Convert.ToInt16(Convert.ToDouble(TextBox7.Text));
+				/*
+				 * Q5ansRounded[0] is the lowest acceptable answer
+				 * it's found using the old resistance (rounded down), old current, and new resistance
+				 * Q5ansRounded[1] is the highest acceptable answer
+				 * Q5ansRounded[1] is found using the old resistance (rounded up), old current, and new resistance
+				 * If the answer is found using the voltage from Q4 and the resistance from Q5, it should always lie between the two values.
+				*/
+				if (Q5ans >= Quiz1.Q7ans[0] && Q5ans <= Quiz1.Q7ans[1])
+				{
+					Label7.Text = "\u2713";//label shows checkmark with green font and 20 font size
+					Label7.ForeColor = System.Drawing.Color.Green;
+					Label7.Font.Size = 20;
+					correct++;
+				}
+				else
+				{
+					Label7.Text = "x";//label shows an x with red font and 20 font size
+					Label7.ForeColor = System.Drawing.Color.DarkRed;
+					Label7.Font.Size = 20;
+				}
+			}
+			LabelOutput.Text = correct + " correct out of " + 7;
 		}
 	}
 }

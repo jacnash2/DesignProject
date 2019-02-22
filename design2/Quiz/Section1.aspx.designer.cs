@@ -94,31 +94,22 @@ namespace design2 {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// LblQ4Volts control.
+        /// lblVinQ4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblQ4Volts;
+        protected global::System.Web.UI.WebControls.Label lblVinQ4;
         
         /// <summary>
-        /// LblQ4Current control.
+        /// lblCurrentQ4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblQ4Current;
-        
-        /// <summary>
-        /// Label4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
+        protected global::System.Web.UI.WebControls.Label lblCurrentQ4;
         
         /// <summary>
         /// TextBox4 control.
@@ -130,13 +121,40 @@ namespace design2 {
         protected global::System.Web.UI.WebControls.TextBox TextBox4;
         
         /// <summary>
-        /// Label5 control.
+        /// Q4unit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.WebControls.DropDownList Q4unit;
+        
+        /// <summary>
+        /// Label4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label4;
+        
+        /// <summary>
+        /// lblCurrentQ5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCurrentQ5;
+        
+        /// <summary>
+        /// lblRQ5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblRQ5;
         
         /// <summary>
         /// TextBox5 control.
@@ -146,6 +164,78 @@ namespace design2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox5;
+        
+        /// <summary>
+        /// Label5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label5;
+        
+        /// <summary>
+        /// LblQ6Volts control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblQ6Volts;
+        
+        /// <summary>
+        /// LblQ6Current control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblQ6Current;
+        
+        /// <summary>
+        /// Label6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label6;
+        
+        /// <summary>
+        /// TextBox6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox6;
+        
+        /// <summary>
+        /// lblQ7R control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblQ7R;
+        
+        /// <summary>
+        /// Label7 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label7;
+        
+        /// <summary>
+        /// TextBox7 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox7;
         
         /// <summary>
         /// Button1 control.
