@@ -27,7 +27,7 @@
 	</p>
 <p>
 	<asp:TextBox ID="TextBox1" runat="server" Width="71px" class="button"></asp:TextBox>
-	<asp:DropDownList ID="DropDownList1" runat="server">
+	<asp:DropDownList ID="DropDownList1" runat="server" class="button">
 		<asp:ListItem>Ω</asp:ListItem>
 		<asp:ListItem>kΩ</asp:ListItem>
 	</asp:DropDownList>
@@ -57,7 +57,7 @@
 	</p>
 <p>
 	<asp:TextBox ID="TextBox2" runat="server" Width="69px" class="button"></asp:TextBox>
-	<asp:DropDownList ID="DropDownList2" runat="server">
+	<asp:DropDownList ID="DropDownList2" runat="server" class="button">
 		<asp:ListItem>Ω</asp:ListItem>
 		<asp:ListItem>kΩ</asp:ListItem>
 	</asp:DropDownList>
@@ -113,8 +113,8 @@
 		<asp:Label ID="Label4" runat="server"></asp:Label>
 	</p>
 	<p>
-		<asp:TextBox ID="TextBox4" runat="server" Width="59px"></asp:TextBox>
-		<asp:DropDownList ID="DropDownList4" runat="server">
+		<asp:TextBox ID="TextBox4" runat="server" Width="59px" class="button"></asp:TextBox>
+		<asp:DropDownList ID="DropDownList4" runat="server" class="button">
 			<asp:ListItem>Ω</asp:ListItem>
 			<asp:ListItem>kΩ</asp:ListItem>
 		</asp:DropDownList>
@@ -126,8 +126,8 @@
 		<asp:Label ID="Label5" runat="server"></asp:Label>
 	</p>
 	<p>
-		<asp:TextBox ID="TextBox5" runat="server" Width="57px"></asp:TextBox>
-		<asp:DropDownList ID="DropDownList5" runat="server">
+		<asp:TextBox ID="TextBox5" runat="server" Width="57px" class="button"></asp:TextBox>
+		<asp:DropDownList ID="DropDownList5" runat="server" class="button">
 			<asp:ListItem>Ω</asp:ListItem>
 			<asp:ListItem>kΩ</asp:ListItem>
 		</asp:DropDownList>
@@ -139,8 +139,8 @@
 		<asp:Label ID="Label6" runat="server"></asp:Label>
 	</p>
 	<p>
-		<asp:TextBox ID="TextBox6" runat="server" Width="55px"></asp:TextBox>
-		<asp:DropDownList ID="DropDownList6" runat="server">
+		<asp:TextBox ID="TextBox6" runat="server" Width="55px" class="button"></asp:TextBox>
+		<asp:DropDownList ID="DropDownList6" runat="server" class="button">
 			<asp:ListItem>Ω</asp:ListItem>
 			<asp:ListItem>kΩ</asp:ListItem>
 		</asp:DropDownList>

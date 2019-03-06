@@ -13,6 +13,12 @@ namespace design2.Quiz
 		Random rand = new Random();
 		int q1r1, q1r2, q1r3, q2r1, q2r2, q2r3, q4r1, q4r2, q4r3, q4r4, q4r5, q4r6;
 
+		public void Page_PreInit()
+		{
+			if (Styles.DarkModeIsOff) this.Theme = "DarkMode";
+			else this.Theme = "LightMode";
+		}
+
 		protected void Page_Load(object sender, EventArgs e)
 		{
 			if (!IsPostBack)

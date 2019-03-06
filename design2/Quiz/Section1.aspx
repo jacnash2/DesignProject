@@ -47,7 +47,7 @@
 	<p>
 		Q3. What is the current in the above circuit?
 		<asp:TextBox ID="TextBox3" runat="server" Width="76px" class="button"></asp:TextBox>
-		<asp:DropDownList ID="Q3unit" runat="server">
+		<asp:DropDownList ID="Q3unit" runat="server" class="button">
 			<asp:ListItem>A</asp:ListItem>
 			<asp:ListItem>mA</asp:ListItem>
 		</asp:DropDownList>
@@ -68,7 +68,7 @@
 	<p>
 		Q4.What is the resistance in the above circuit?
 		<asp:TextBox ID="TextBox4" runat="server" Width="66px" class="button"></asp:TextBox>
-		<asp:DropDownList ID="Q4unit" runat="server">
+		<asp:DropDownList ID="Q4unit" runat="server" class="button">
 			<asp:ListItem>Ω</asp:ListItem>
 			<asp:ListItem>kΩ</asp:ListItem>
 		</asp:DropDownList>
