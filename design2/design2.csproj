@@ -191,6 +191,7 @@
     <Content Include="Pictures\eq3.png" />
     <Content Include="Pictures\eq4.png" />
     <Content Include="Pictures\eq5.png" />
+    <Content Include="Pictures\eq6.png" />
     <Content Include="Pictures\g1.png" />
     <Content Include="Pictures\g2.png" />
     <Content Include="Quiz\Section1.aspx" />
@@ -242,6 +243,7 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Classes\Quiz1.cs" />
+    <Compile Include="Classes\Quiz2.cs" />
     <Compile Include="Classes\Styles.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

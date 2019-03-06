@@ -26,7 +26,7 @@
 			Ω&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<asp:TextBox ID="TextBox2" runat="server" Width="66px" class="button"></asp:TextBox>
 			Ω<br />
-			<img alt="" src="../Pictures/eq1b.jpg" style="width: 561px; height: 208px" /><asp:TextBox ID="TextBox3" runat="server" Width="67px" class="button"></asp:TextBox>
+			<img alt="" src="../Pictures/eq1.png" style="width: 561px; height: 249px" /><asp:TextBox ID="TextBox3" runat="server" Width="67px" class="button"></asp:TextBox>
 			Ω<br />
 			<p />
 				&nbsp;&nbsp;<asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Calculate Equivalent Resistance" Width="271px" class="button"/>
@@ -52,11 +52,11 @@
 				&nbsp;<p />
 				<p class="header">Example Problem<p />
 			<img alt="" src="../Pictures/eq5.png" style="width: 734px; height: 310px" /><p />
-				For this problem, you have a 100Ω resistor in parrallel with a 200Ω resistor. These resistors are then in series with a 300Ω resistor. Then, this set of three resistors is in series with the 500Ω resistor and 400Ω resistor, which are in parallel with each other.<p />
+				For this problem, we have a 100Ω resistor in parrallel with a 200Ω resistor. These resistors are then in series with a 300Ω resistor. Then, this set of three resistors is in series with the 500Ω resistor and 400Ω resistor, which are in parallel with each other.<p />
 				This set of resistors can then be written as Req = (100|200)+300+(500|400).<p />
-				100|200 = 1/(1/100 + 1/200) = 66.667<p />
-				500|400 = 1/(1/500 + 1/400) = 222.222<p />
-				Then, we&#39;re left with Req = 66.667 + 300 + 222.222 = <strong>588.889Ω</strong><br />
+				100|200 = 1/(1/100 + 1/200) = 67<p />
+				500|400 = 1/(1/500 + 1/400) = 222<p />
+				Then, we&#39;re left with Req = 67 + 300 + 222 = <strong>589Ω</strong><br />
 			<br />
         </div>
 
