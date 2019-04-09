@@ -9,6 +9,9 @@
 	font-size: x-large;
 	font-family: Calibri;
 }
+.textbox {
+	width: 50px;
+}
 body {
 	font-size: 18px;
 	font-family: Calibri;

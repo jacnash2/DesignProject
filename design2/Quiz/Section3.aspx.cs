@@ -11,7 +11,7 @@ namespace design2.Quiz
 	public partial class Section3 : System.Web.UI.Page
 	{
 		Random rand = new Random();
-		double q1is, q4i2, q4i3, q4i4, q4i6, temp;
+		double q1is, q4i2, q4i3, q4i4, q4i6, q2is, q2r1, q2r2, q2r3;
 		int q1vo, q1r1, q1r2;
 
 		protected void Page_Load(object sender, EventArgs e)
@@ -28,11 +28,22 @@ namespace design2.Quiz
 				double q1i2 = 0.02 * (rand.Next(25) + 1);//0.02 to 0.5 A
 				q1is = (Convert.ToDouble((100 * q1vo / q1r1)) / 100) + q1i2;//0.03 to 2.5 A, i1 + i2
 				q1r2 = rand.Next(Convert.ToInt16(q1vo/q1i2)) + 1;//1 to (V/I2) Ohms - makes sure R3 can't be negative
-				lblQ1Is.Text = q1is.ToString();
+				lblQ1Is.Text = (q1is * 1000).ToString();
 				lblQ1R1.Text = q1r1.ToString();
 				lblQ1R2.Text = q1r2.ToString();
 				lblQ1V0.Text = q1vo.ToString();
-				//for questions 4-7
+
+				//for questions 4 and 5
+				q2is = Convert.ToDouble((rand.Next(1000) + 1)) / 1000;//1 to 1000 mA
+				q2r1 = (rand.Next(100) + 1) * 10;//10 to 1000 Ohms
+				q2r2 = (rand.Next(100) + 1) * 10;//10 to 1000 Ohms
+				q2r3 = (rand.Next(100) + 1) * 10;//10 to 1000 Ohms
+				lblQ2Is.Text = (q2is * 1000).ToString();
+				lblQ2R1.Text = q2r1.ToString();
+				lblQ2R2.Text = q2r2.ToString();
+				lblQ2R3.Text = q2r3.ToString();
+
+				//for questions 6-9
 				q4i2 = Convert.ToDouble((rand.Next(100) + 1)) / 10;//0.1 to 10 A
 				q4i3 = Convert.ToDouble((rand.Next(100) + 1)) / 10;//0.1 to 10 A
 				q4i4 = Convert.ToDouble((rand.Next(100) + 1)) / 10;//0.1 to 10 A
@@ -50,6 +61,10 @@ namespace design2.Quiz
 				Quiz3.Q4I3 = q4i3;
 				Quiz3.Q4I4 = q4i4;
 				Quiz3.Q4I6 = q4i6;
+				Quiz3.Q2IS = q2is;
+				Quiz3.Q2R1 = q2r1;
+				Quiz3.Q2R2 = q2r2;
+				Quiz3.Q2R3 = q2r3;
 			}
 		}
 		int correct = 0;
@@ -123,15 +138,13 @@ namespace design2.Quiz
 				}
 			}
 			//question 4
-			if (!Double.TryParse(TextBox4.Text, out double Q4ans))
-			{
+			if (!Double.TryParse(TextBox4.Text, out double Q4ans)){
 				Label4.Text = "Error: answer isn't correctly formatted";
 				Label4.ForeColor = System.Drawing.Color.DarkRed;
 			}
-			else
-			{
+			else {
 				if (DropDownList4.SelectedValue == "mA") Q4ans = Q4ans / 1000;
-				if (Q4ans == Quiz3.Q4ans)
+				if (Q4ans <= (Quiz3.Q4ans + 10) && Q4ans >= (Quiz3.Q4ans - 10))
 				{
 					Label4.Text = "\u2713";
 					Label4.ForeColor = System.Drawing.Color.Green;
@@ -152,7 +165,7 @@ namespace design2.Quiz
 			else
 			{
 				if (DropDownList5.SelectedValue == "mA") Q5ans = Q5ans / 1000;
-				if (Q5ans == Quiz3.Q5ans)
+				if (Q5ans <= (Quiz3.Q5ans + 10) && Q5ans >= (Quiz3.Q5ans - 10))
 				{
 					Label5.Text = "\u2713";
 					Label5.ForeColor = System.Drawing.Color.Green;
@@ -207,16 +220,58 @@ namespace design2.Quiz
 				}
 			}
 			//question 8
+			if (!Double.TryParse(TextBox8.Text, out double Q8ans))
+			{
+				Label8.Text = "Error: answer isn't correctly formatted";
+				Label8.ForeColor = System.Drawing.Color.DarkRed;
+			}
+			else
+			{
+				if (DropDownList8.SelectedValue == "mA") Q8ans = Q8ans / 1000;
+				if (Q8ans == Quiz3.Q8ans)
+				{
+					Label8.Text = "\u2713";
+					Label8.ForeColor = System.Drawing.Color.Green;
+					correct++;
+				}
+				else
+				{
+					Label8.Text = "x";
+					Label8.ForeColor = System.Drawing.Color.DarkRed;
+				}
+			}
+			//question 9
+			if (!Double.TryParse(TextBox9.Text, out double Q9ans))
+			{
+				Label9.Text = "Error: answer isn't correctly formatted";
+				Label9.ForeColor = System.Drawing.Color.DarkRed;
+			}
+			else
+			{
+				if (DropDownList9.SelectedValue == "mA") Q9ans = Q9ans / 1000;
+				if (Q9ans == Quiz3.Q9ans)
+				{
+					Label9.Text = "\u2713";
+					Label9.ForeColor = System.Drawing.Color.Green;
+					correct++;
+				}
+				else
+				{
+					Label9.Text = "x";
+					Label9.ForeColor = System.Drawing.Color.DarkRed;
+				}
+			}
+			//question 10
 			if (RadioButtonList1.SelectedValue == "Their value is doubled.")
 			{
-				Label8.Text = "\u2713";
-				Label8.ForeColor = System.Drawing.Color.Green;
+				Label10.Text = "\u2713";
+				Label10.ForeColor = System.Drawing.Color.Green;
 				correct++;
 			}
 			else
 			{
-				Label8.Text = "x";
-				Label8.ForeColor = System.Drawing.Color.DarkRed;
+				Label10.Text = "x";
+				Label10.ForeColor = System.Drawing.Color.DarkRed;
 			}
 
 			lblOutput.Text = correct + " questions correct out of " + 8;

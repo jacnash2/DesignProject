@@ -3,7 +3,7 @@
 	<asp:Button ID="Button1" runat="server" Text="Back to Notes" />
 	<br />
 	<br />
-	<p class="header">Interactive Examples</p>
+	<p class="header">Interactive Example</p>
 	<br />
 	<img alt="" src="../Pictures/section3-2a.png" style="width: 541px; height: 509px" /><br />
 	<br />
@@ -79,4 +79,6 @@
 	i2 can be found the same way, giving us 480V / (300Ω + 500Ω) = <strong>0.6A</strong>.<br />
 	<br />
 	Now, we can test our answer using Kirchoff's current law, which tells us that i1 + i2 = 3A. 2.4A + 0.6A = 3.0A, so it works.
+	<br />
+	<br />
 </asp:Content>

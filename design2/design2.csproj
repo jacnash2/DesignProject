@@ -144,6 +144,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Examples\Section3.aspx" />
+    <Content Include="Examples\Section4.aspx" />
     <Content Include="Notes\Section1.aspx" />
     <Content Include="Notes\Section3.aspx" />
     <Content Include="Pictures\1.png" />
@@ -201,9 +202,15 @@
     <Content Include="Pictures\section3-2a.png" />
     <Content Include="Pictures\section3-2b.png" />
     <Content Include="Pictures\section3-3.png" />
+    <Content Include="Pictures\section3-4.png" />
+    <Content Include="Pictures\section3-4b.png" />
+    <Content Include="Pictures\section3-4c.png" />
+    <Content Include="Pictures\section3-5a.png" />
+    <Content Include="Pictures\section3-5b.png" />
     <Content Include="Quiz\Section1.aspx" />
     <Content Include="Quiz\Section2.aspx" />
     <Content Include="Quiz\Section3.aspx" />
+    <Content Include="Quiz\Section4.aspx" />
     <Content Include="SI.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -253,6 +260,7 @@
     <Compile Include="Classes\Quiz1.cs" />
     <Compile Include="Classes\Quiz2.cs" />
     <Compile Include="Classes\Quiz3.cs" />
+    <Compile Include="Classes\Quiz4.cs" />
     <Compile Include="Classes\Styles.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -274,6 +282,13 @@
     </Compile>
     <Compile Include="Examples\Section3.aspx.designer.cs">
       <DependentUpon>Section3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\Section4.aspx.cs">
+      <DependentUpon>Section4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examples\Section4.aspx.designer.cs">
+      <DependentUpon>Section4.aspx</DependentUpon>
     </Compile>
     <Compile Include="Notes\Section1.aspx.cs">
       <DependentUpon>Section1.aspx</DependentUpon>
@@ -306,6 +321,13 @@
     </Compile>
     <Compile Include="Quiz\Section3.aspx.designer.cs">
       <DependentUpon>Section3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\Section4.aspx.cs">
+      <DependentUpon>Section4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quiz\Section4.aspx.designer.cs">
+      <DependentUpon>Section4.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

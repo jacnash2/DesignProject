@@ -13,6 +13,11 @@ namespace design2.Examples
 		double[] I = new double[8];
 		//Ival lets you know whether a value I[#] is valid.
 		bool[] Ival = new bool[8];
+		public void Page_PreInit()
+		{
+			this.Theme = "LightMode";
+		}
+
 		protected void Page_Load(object sender, EventArgs e)
 		{
 		}
@@ -35,11 +40,6 @@ namespace design2.Examples
 			if (Double.TryParse(TextBoxS.Text, out I[0])) Ival[0] = true;//Is
 			else Ival[0] = false;
 
-
-
-
-
-
 			for (int i = 0; i < 6; i++)
 			{
 				if (!Ival[1])
@@ -61,9 +61,9 @@ namespace design2.Examples
 						{
 							Label1.Text = "Calculated from I2 + I3";
 							I[1] = temp;
+							Ival[1] = true;
+							TextBox1.Text = I[1].ToString();
 						}
-						Ival[1] = true;
-						TextBox1.Text = I[1].ToString();
 					}
 				}
 				if (!Ival[2])
@@ -85,9 +85,9 @@ namespace design2.Examples
 						{
 							Label2.Text = "Calculated from I7 - I5";
 							I[2] = temp;
+							Ival[2] = true;
+							TextBox2.Text = I[2].ToString();
 						}
-						Ival[2] = true;
-						TextBox2.Text = I[2].ToString();
 					}
 				}
 				if (!Ival[3])
@@ -96,7 +96,7 @@ namespace design2.Examples
 					//I3 = I1 - I2 = I5 + I6 - I4
 					if (Ival[1] && Ival[2])
 					{
-						I[3] = I[1] = I[2];
+						I[3] = I[1] - I[2];
 						Ival[3] = true;
 						TextBox3.Text = I[3].ToString();
 						Label3.Text = "Calculated from I1 - I2";
@@ -109,9 +109,9 @@ namespace design2.Examples
 						{
 							I[3] = temp;
 							Label3.Text = "Calculated from I5 + I6 - I4";
+							Ival[3] = true;
+							TextBox3.Text = I[3].ToString();
 						}
-						Ival[3] = true;
-						TextBox3.Text = I[3].ToString();
 					}
 				}
 				if (!Ival[4])
@@ -133,9 +133,9 @@ namespace design2.Examples
 						{
 							I[4] = temp;
 							Label4.Text = "Calculated from I5 + I6 - I3";
+							Ival[4] = true;
+							TextBox4.Text = I[4].ToString();
 						}
-						Ival[4] = true;
-						TextBox4.Text = I[4].ToString();
 					}
 				}
 				if (!Ival[5])
@@ -157,9 +157,9 @@ namespace design2.Examples
 						{
 							I[5] = temp;
 							Label5.Text = "Calculated from (I7 - I2)";
+							Ival[5] = true;
+							TextBox5.Text = I[5].ToString();
 						}
-						Ival[5] = true;
-						TextBox5.Text = I[5].ToString();
 					}
 				}
 				if (!Ival[6])
@@ -198,9 +198,7 @@ namespace design2.Examples
 						LabelS.Text = "Calculated from (I1 + I4)";
 					}
 				}
-
 			}
-
 		}
 	}
 }
