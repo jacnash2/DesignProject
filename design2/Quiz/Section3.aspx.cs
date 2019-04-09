@@ -11,17 +11,23 @@ namespace design2.Quiz
 	public partial class Section3 : System.Web.UI.Page
 	{
 		Random rand = new Random();
-		double q1vo, q1is, q1r1, q1r2, q4i2, q4i3, q4i4, q4i6;
+		double q1is, q4i2, q4i3, q4i4, q4i6, temp;
+		int q1vo, q1r1, q1r2;
 
 		protected void Page_Load(object sender, EventArgs e)
 		{
 			if (!IsPostBack)
 			{
+				//default values for drop down lists
+				DropDownList1.SelectedValue = "mA";
+				DropDownList2.SelectedValue = "mA";
+
 				//for questions 1-3
-				q1vo = rand.Next(100) + 100;//100 to 200 V
-				q1is = Convert.ToDouble((rand.Next(50) + 10)) / 10;//1 to 6 A
-				q1r1 = rand.Next(50) + 50;//50 to 100 Ohms
-				q1r2 = rand.Next(50) + 1;//1 to 50 Ohms
+				q1vo = rand.Next(20) + 1;//1 to 20 V
+				q1r1 = (rand.Next(10) + 1) * 10;//10 to 100 Ohms
+				double q1i2 = 0.02 * (rand.Next(25) + 1);//0.02 to 0.5 A
+				q1is = (Convert.ToDouble((100 * q1vo / q1r1)) / 100) + q1i2;//0.03 to 2.5 A, i1 + i2
+				q1r2 = rand.Next(Convert.ToInt16(q1vo/q1i2)) + 1;//1 to (V/I2) Ohms - makes sure R3 can't be negative
 				lblQ1Is.Text = q1is.ToString();
 				lblQ1R1.Text = q1r1.ToString();
 				lblQ1R2.Text = q1r2.ToString();
@@ -59,7 +65,8 @@ namespace design2.Quiz
 			else
 			{
 				if (DropDownList1.SelectedValue == "A") Q1ans = Q1ans * 1000;
-				if (Q1ans == Quiz3.Q1ans)
+				//answer is within 10 mA of correct answer
+				if (Q1ans < (Quiz3.Q1ans + 10) && Q1ans > (Quiz3.Q1ans - 10))
 				{
 					Label1.Text = "\u2713";
 					Label1.ForeColor = System.Drawing.Color.Green;
@@ -80,7 +87,8 @@ namespace design2.Quiz
 			else
 			{
 				if (DropDownList2.SelectedValue == "A") Q2ans = Q2ans * 1000;
-				if (Q2ans == Quiz3.Q2ans)
+				//answer is within 10 mA of correct answer
+				if (Q2ans < (Quiz3.Q2ans + 10) && Q2ans > (Quiz3.Q2ans - 10))
 				{
 					Label2.Text = "\u2713";
 					Label2.ForeColor = System.Drawing.Color.Green;
@@ -101,7 +109,8 @@ namespace design2.Quiz
 			else
 			{
 				if (DropDownList3.SelectedValue == "kΩ") Q3ans = Q3ans * 1000;
-				if (Q3ans == Quiz3.Q3ans)
+				//rounded answer is within 1 Ohm of correct answer
+				if (Math.Round(Q3ans) >= (Quiz3.Q3ans - 1) && Math.Round(Q3ans) <= (Quiz3.Q3ans + 1))
 				{
 					Label3.Text = "\u2713";
 					Label3.ForeColor = System.Drawing.Color.Green;

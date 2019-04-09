@@ -7,8 +7,9 @@ namespace design2.Classes
 {
 	public class Quiz3
 	{
-		public static double _q1vo, _q1is, _q1r1, _q1r2, _q4i2, _q4i3, _q4i4, _q4i6;
-		public static double Q1VO
+		public static double _q1is, _q4i2, _q4i3, _q4i4, _q4i6;
+		public static int _q1vo, _q1r1, _q1r2;
+		public static int Q1VO
 		{
 			get { return _q1vo; }
 			set { _q1vo = value; }
@@ -18,12 +19,12 @@ namespace design2.Classes
 			get { return _q1is; }
 			set { _q1is = value; }
 		}
-		public static double Q1R1
+		public static int Q1R1
 		{
 			get { return _q1r1; }
 			set { _q1r1 = value; }
 		}
-		public static double Q1R2
+		public static int Q1R2
 		{
 			get { return _q1r2; }
 			set { _q1r2 = value; }
@@ -51,7 +52,7 @@ namespace design2.Classes
 		//returns the answer in mA
 		public static int Q1ans
 		{
-			get { return Convert.ToInt16(1000 * _q1vo / _q1r1); }
+			get { return 1000 * _q1vo / _q1r1; }
 		}
 		//returns the answer in mA
 		public static int Q2ans
@@ -61,24 +62,24 @@ namespace design2.Classes
 		//returns the answer in Ohms
 		public static int Q3ans
 		{
-			get { return Convert.ToInt16((1000 * _q1vo / Q2ans) - _q1r2); }
+			get { return (1000 * _q1vo / Q2ans) - _q1r2; }
 		}
+		//rounding these to prevent answers like 1.2000000001
 		public static double Q4ans
 		{
-			get { return _q4i2 + _q4i3; }
+			get { return Math.Round(_q4i2 + _q4i3, 1, MidpointRounding.AwayFromZero); }
 		}
 		public static double Q5ans
 		{
-			get { return _q4i4 + Q4ans; }
+			get { return Math.Round(_q4i4 + Q4ans, 1, MidpointRounding.AwayFromZero); }
 		}
-		//this needs to be rounded to avoid answers like 1.200000001
 		public static double Q6ans
 		{
 			get { return Math.Round(_q4i3 + _q4i4 - _q4i6, 1, MidpointRounding.AwayFromZero); }
 		}
 		public static double Q7ans
 		{
-			get { return _q4i2 + Q6ans; }
+			get { return Math.Round(_q4i2 + Q6ans, 1, MidpointRounding.AwayFromZero); }
 		}
 	}
 }

@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 	<asp:Button ID="Button1" runat="server" Text="Back to Notes" />
 	<br />
+	<br />
 	<span style="text-decoration: underline">Figure for Q1. through Q3.</span><br />
 	<img alt="" src="../Pictures/section3-1b.png" style="width: 540px; height: 289px" /><br />
 	<br />
