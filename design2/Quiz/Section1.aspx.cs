@@ -127,14 +127,13 @@ namespace design2
 			}
 			//question 3
 			//answer needs to be correct to two significant digits
-			if (!Double.TryParse(TextBox3.Text, out double validate))
+			if (!Double.TryParse(TextBox3.Text, out double Q3ans))
 			{//validation failed, user entered letters or special characters
 				Label3.Text = "Error: answer isn't correctly formatted";
 				Label3.ForeColor = System.Drawing.Color.DarkRed;
 			}
 			else
 			{//validation was successful
-				double Q3ans = Convert.ToDouble(TextBox3.Text);
 				if (Q3unit.SelectedValue == "A")//user gave the answer in Amps
 				{
 					Q3ans = RoundAnswer(Q3ans);
@@ -173,14 +172,14 @@ namespace design2
 			}
 			//question 4
 			//answer must be correct in integer form (doesn't care about decimal places)
-			if (!Double.TryParse(TextBox4.Text, out validate))
+			if (!Double.TryParse(TextBox4.Text, out double Q4ans))
 			{//validation failed
 				Label4.Text = "Error: answer isn't correctly formatted";
 				Label4.ForeColor = System.Drawing.Color.DarkRed;
 			}
 			else
 			{//go from text to double, then round the double to nearest integer
-				if (Math.Round(Convert.ToDouble(TextBox4.Text)) == Quiz1.Q4ans || Math.Round(Convert.ToDouble(TextBox4.Text)) == (Quiz1.Q4ans + 1))
+				if (Math.Round(Q4ans) == Quiz1.Q4ans || Math.Round(Q4ans) == (Quiz1.Q4ans + 1))
 				{//answer is correct within 1 integer value
 					Label4.Text = "\u2713";//output green checkmark size 20
 					Label4.ForeColor = System.Drawing.Color.Green;
@@ -196,14 +195,14 @@ namespace design2
 			}
 			//question 5
 			//answer must be correct in integer form (doesn't care about decimal places)
-			if (!Double.TryParse(TextBox5.Text, out validate))
+			if (!Double.TryParse(TextBox5.Text, out double Q5ans))
 			{//validation failed
 				Label5.Text = "Error: answer isn't correctly formatted";
 				Label5.ForeColor = System.Drawing.Color.DarkRed;
 			}
 			else
 			{//same as above, from string to double and rounded to integer
-				if (Math.Round(Convert.ToDouble(TextBox5.Text)) == Quiz1.Q5ans || Math.Round(Convert.ToDouble(TextBox5.Text)) == (Quiz1.Q5ans + 1))
+				if (Math.Round(Q5ans) == Quiz1.Q5ans || Math.Round(Q5ans) == (Quiz1.Q5ans + 1))
 				{//again, accepts rounded up or rounded down answers
 					Label5.Text = "\u2713";//outputs green checkmark size 20
 					Label5.ForeColor = System.Drawing.Color.Green;
@@ -219,14 +218,14 @@ namespace design2
 			}
 			//question 6
 			//answer must be correct in integer form (doesn't care about decimal places)
-			if (!Double.TryParse(TextBox6.Text, out validate))
+			if (!Double.TryParse(TextBox6.Text, out double Q6ans))
 			{//validation failed,
 				Label6.Text = "Error: answer isn't correctly formatted";
 				Label6.ForeColor = System.Drawing.Color.DarkRed;
 			}
 			else
 			{//comparing double to integer, rounding for it to work
-				if (Math.Round(Convert.ToDouble(TextBox6.Text)) == Quiz1.Q6ans || Math.Round(Convert.ToDouble(TextBox6.Text)) == (Quiz1.Q6ans + 1))
+				if (Math.Round(Q6ans) == Quiz1.Q6ans || Math.Round(Q6ans) == (Quiz1.Q6ans + 1))
 				{//(Quiz1.Q4ans + 1) allows answers to be correct if user rounded up, so there are two acceptable answers here
 					Label6.Text = "\u2713";//outputs green checkmark size 20
 					Label6.ForeColor = System.Drawing.Color.Green;
@@ -241,22 +240,21 @@ namespace design2
 				}
 			}
 			//question 7
-			if (!Double.TryParse(TextBox7.Text, out validate))
+			if (!Double.TryParse(TextBox7.Text, out double Q7ans))
 			{//validation failed, user entered a nonnumber character
 				Label7.Text = "Error: answer isn't correctly formatted";
 				Label7.ForeColor = System.Drawing.Color.DarkRed;
 			}
 			else
 			{//conver to a double first, then convert to an integer. otherwise it'll crash when users use decimal places.
-				int Q5ans = Convert.ToInt16(Convert.ToDouble(TextBox7.Text));
 				/*
-				 * Q5ansRounded[0] is the lowest acceptable answer
+				 * Q7ansRounded[0] is the lowest acceptable answer
 				 * it's found using the old resistance (rounded down), old current, and new resistance
-				 * Q5ansRounded[1] is the highest acceptable answer
-				 * Q5ansRounded[1] is found using the old resistance (rounded up), old current, and new resistance
+				 * Q7ansRounded[1] is the highest acceptable answer
+				 * Q7ansRounded[1] is found using the old resistance (rounded up), old current, and new resistance
 				 * If the answer is found using the voltage from Q4 and the resistance from Q5, it should always lie between the two values.
 				*/
-				if (Q5ans >= Quiz1.Q7ans[0] && Q5ans <= Quiz1.Q7ans[1])
+				if (Q7ans >= Quiz1.Q7ans[0] && Q7ans <= Quiz1.Q7ans[1])
 				{
 					Label7.Text = "\u2713";//label shows checkmark with green font and 20 font size
 					Label7.ForeColor = System.Drawing.Color.Green;

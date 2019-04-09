@@ -11,15 +11,15 @@
 	<p>
 		R1 =
 		<asp:Label ID="lblQ1R1" runat="server"></asp:Label>
-	</p>
+		Ω</p>
 	<p>
 		R2 =
 		<asp:Label ID="lblQ1R2" runat="server"></asp:Label>
-	</p>
+		Ω</p>
 	<p>
 		R3 =
 		<asp:Label ID="lblQ1R3" runat="server"></asp:Label>
-	</p>
+		Ω</p>
 <p>
 	Q1.
 	What is the equivalent resistance for the above circuit?
@@ -41,15 +41,15 @@
 	<p>
 		R1 =
 		<asp:Label ID="lblQ2R1" runat="server"></asp:Label>
-	</p>
+		Ω</p>
 	<p>
 		R2 =
 		<asp:Label ID="lblQ2R2" runat="server"></asp:Label>
-	</p>
+		Ω</p>
 	<p>
 		R3 =
 		<asp:Label ID="lblQ2R3" runat="server"></asp:Label>
-	</p>
+		Ω</p>
 	<p>
 		Q2.
 	What is the equivalent resistance for the above circuit?
@@ -87,27 +87,27 @@
 	<p>
 		R1 =
 		<asp:Label ID="lblQ4R1" runat="server"></asp:Label>
-	</p>
+		Ω</p>
 	<p>
 		R2 =
 		<asp:Label ID="lblQ4R2" runat="server"></asp:Label>
-	</p>
+		Ω</p>
 	<p>
 		R3 =
 		<asp:Label ID="lblQ4R3" runat="server"></asp:Label>
-	</p>
+		Ω</p>
 	<p>
 		R4 =
 		<asp:Label ID="lblQ4R4" runat="server"></asp:Label>
-	</p>
+		Ω</p>
 	<p>
 		R5 =
 		<asp:Label ID="lblQ4R5" runat="server"></asp:Label>
-	</p>
+		Ω</p>
 	<p>
 		R6 =
 		<asp:Label ID="lblQ4R6" runat="server"></asp:Label>
-	</p>
+		Ω</p>
 	<p>
 		Q4. What is the equivalent resistance for the left half of the circuit (from the starting point through R1, R2, and R3)?
 		<asp:Label ID="Label4" runat="server"></asp:Label>

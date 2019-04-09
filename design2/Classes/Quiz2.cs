@@ -83,7 +83,7 @@ namespace design2.Classes
 		}
 		public static int Q5ans
 		{
-			get { return Convert.ToInt16(_q4r5 + 1 / ((1 / _q4r4) + (1 / _q4r6))); }
+			get { return Convert.ToInt16(1 / ((1 / _q4r5) + (1 / (_q4r4 + _q4r6)))); }
 		}
 		public static int Q6ans
 		{

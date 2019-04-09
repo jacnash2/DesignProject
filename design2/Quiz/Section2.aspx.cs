@@ -71,14 +71,13 @@ namespace design2.Quiz
 		protected void Button1_Click(object sender, EventArgs e)
 		{
 			//question 1
-			if (!Double.TryParse(TextBox1.Text, out double validate))
+			if (!Double.TryParse(TextBox1.Text, out double Q1ans))
 			{//even though the answer is an integer, this accepts answers with decimal places, but they'll be counted as wrong
 				Label1.Text = "Error: answer isn't correctly formatted";
 				Label1.ForeColor = System.Drawing.Color.DarkRed;
 			}
 			else
 			{
-				double Q1ans = Convert.ToDouble(TextBox1.Text);
 				if (DropDownList1.SelectedValue == "kΩ") Q1ans = Q1ans * 1000;
 				if (Q1ans == Quiz2.Q1ans)
 				{
@@ -93,14 +92,13 @@ namespace design2.Quiz
 				}
 			}
 			//question 2
-			if (!Double.TryParse(TextBox2.Text, out validate))
+			if (!Double.TryParse(TextBox2.Text, out double Q2ans))
 			{
 				Label2.Text = "Error: answer isn't correctly formatted";
 				Label2.ForeColor = System.Drawing.Color.DarkRed;
 			}
 			else
 			{
-				double Q2ans = Convert.ToDouble(TextBox2.Text);
 				if (DropDownList2.SelectedValue == "kΩ") Q2ans = Q2ans * 1000;
 				if (Q2ans >= (Quiz2.Q2ans - 1) && Q2ans <= (Quiz2.Q2ans + 1))
 				{
@@ -127,14 +125,13 @@ namespace design2.Quiz
 				Label3.ForeColor = System.Drawing.Color.DarkRed;
 			}
 			//question 4
-			if (!Double.TryParse(TextBox4.Text, out validate))
+			if (!Double.TryParse(TextBox4.Text, out double Q4ans))
 			{
 				Label4.Text = "Error: answer isn't correctly formatted";
 				Label4.ForeColor = System.Drawing.Color.DarkRed;
 			}
 			else
 			{
-				double Q4ans = Convert.ToDouble(TextBox4.Text);
 				if (DropDownList4.SelectedValue == "kΩ") Q4ans = Q4ans * 1000;
 				if (Q4ans >= (Quiz2.Q4ans - 1) && Q4ans <= (Quiz2.Q4ans + 1))
 				{
@@ -149,14 +146,13 @@ namespace design2.Quiz
 				}
 			}
 			//question 5
-			if (!Double.TryParse(TextBox5.Text, out validate))
+			if (!Double.TryParse(TextBox5.Text, out double Q5ans))
 			{
 				Label5.Text = "Error: answer isn't correctly formatted";
 				Label5.ForeColor = System.Drawing.Color.DarkRed;
 			}
 			else
 			{
-				double Q5ans = Convert.ToDouble(TextBox5.Text);
 				if (DropDownList5.SelectedValue == "kΩ") Q5ans = Q5ans * 1000;
 				if (Q5ans >= (Quiz2.Q5ans - 1) && Q5ans <= (Quiz2.Q5ans + 1))
 				{
@@ -171,14 +167,13 @@ namespace design2.Quiz
 				}
 			}
 			//question 6
-			if (!Double.TryParse(TextBox6.Text, out validate))
+			if (!Double.TryParse(TextBox6.Text, out double Q6ans))
 			{
 				Label6.Text = "Error: answer isn't correctly formatted";
 				Label6.ForeColor = System.Drawing.Color.DarkRed;
 			}
 			else
 			{
-				double Q6ans = Convert.ToDouble(TextBox6.Text);
 				if (DropDownList6.SelectedValue == "kΩ") Q6ans = Q6ans * 1000;
 				if (Q6ans >= (Quiz2.Q6ans - 2) && Q6ans <= (Quiz2.Q6ans + 2))
 				{

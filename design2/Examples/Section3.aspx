@@ -3,20 +3,7 @@
 	<asp:Button ID="Button1" runat="server" Text="Back to Notes" />
 	<br />
 	<br />
-	<p class="header">Interactive Examples</p>Answers rounded to this many decimal places:
-	<asp:DropDownList ID="DropDownList1" runat="server">
-		<asp:ListItem>0</asp:ListItem>
-		<asp:ListItem>1</asp:ListItem>
-		<asp:ListItem>2</asp:ListItem>
-		<asp:ListItem>3</asp:ListItem>
-		<asp:ListItem>4</asp:ListItem>
-		<asp:ListItem>5</asp:ListItem>
-		<asp:ListItem>6</asp:ListItem>
-		<asp:ListItem>7</asp:ListItem>
-		<asp:ListItem>8</asp:ListItem>
-		<asp:ListItem>9</asp:ListItem>
-	</asp:DropDownList>
-	<br />
+	<p class="header">Interactive Examples</p>
 	<br />
 	<img alt="" src="../Pictures/section3-2a.png" style="width: 541px; height: 509px" /><br />
 	<br />

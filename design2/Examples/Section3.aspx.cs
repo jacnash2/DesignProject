@@ -15,9 +15,6 @@ namespace design2.Examples
 		bool[] Ival = new bool[8];
 		protected void Page_Load(object sender, EventArgs e)
 		{
-			if (IsPostBack)//only happens after button pressed or refresh
-			{
-			}
 		}
 		protected void ButtonSubmit_Click(object sender, EventArgs e)
 		{
@@ -48,7 +45,7 @@ namespace design2.Examples
 				if (!Ival[1])
 				{
 					Label1.Text = "Could not calculate a value for I1";//if it can calculate I1, this will be overwritten by something else
-																	   //I1 = Is - I4 = I2 + I3
+					//I1 = Is - I4 = I2 + I3
 					if (Ival[0] && Ival[4])
 					{
 						I[1] = I[0] - I[4];
@@ -72,13 +69,13 @@ namespace design2.Examples
 				if (!Ival[2])
 				{
 					Label2.Text = "Could not calculate a value for I2";//if it can calculate I1, this will be overwritten by something else
-																	   //I2 = I1 - I3 = I7 - I5
+					//I2 = I1 - I3 = I7 - I5
 					if (Ival[1] && Ival[3])
 					{
-						I[2] = I[1] + I[3];
+						I[2] = I[1] - I[3];
 						Ival[2] = true;
 						TextBox2.Text = I[2].ToString();
-						Label2.Text = "Calculated from I1 + I3";
+						Label2.Text = "Calculated from I1 - I3";
 					}
 					if (Ival[7] && Ival[5])
 					{
@@ -96,7 +93,7 @@ namespace design2.Examples
 				if (!Ival[3])
 				{
 					Label3.Text = "Could not calculate a value for I3";//if it can calculate I1, this will be overwritten by something else
-																	   //I3 = I1 - I2 = I5 + I6 - I4
+					//I3 = I1 - I2 = I5 + I6 - I4
 					if (Ival[1] && Ival[2])
 					{
 						I[3] = I[1] = I[2];
@@ -120,7 +117,6 @@ namespace design2.Examples
 				if (!Ival[4])
 				{
 					Label4.Text = "Could not calculate a value for I4";//if it can calculate I1, this will be overwritten by something else
-
 					//I4 = Is - I1 = I5 + I6 - I3
 					if (Ival[0] && Ival[1])
 					{
@@ -145,7 +141,6 @@ namespace design2.Examples
 				if (!Ival[5])
 				{
 					Label5.Text = "Could not calculate a value for I5";//if it can calculate I1, this will be overwritten by something else
-
 					//I5 = I3 + I4 - I6 = I7 - I2
 					if (Ival[3] && Ival[4] && Ival[6])
 					{
@@ -170,7 +165,6 @@ namespace design2.Examples
 				if (!Ival[6])
 				{
 					Label6.Text = "Could not calculate a value for I6";//if it can calculate I1, this will be overwritten by something else
-
 					//I6 = I3 + I4 - I5
 					if (Ival[3] && Ival[4] && Ival[5])
 					{
@@ -183,7 +177,6 @@ namespace design2.Examples
 				if (!Ival[7])
 				{
 					Label7.Text = "Could not calculate a value for I7";//if it can calculate I1, this will be overwritten by something else
-
 					//I7 = I2 + I5
 					if (Ival[2] && Ival[5])
 					{
@@ -196,13 +189,13 @@ namespace design2.Examples
 				if (!Ival[0])//Is
 				{
 					LabelS.Text = "Could not calculate a value for Is";//if it can calculate I1, this will be overwritten by something else
-																	   //Is = I3 + I4
-					if (Ival[3] && Ival[4])
+					//Is = I1 + I4
+					if (Ival[1] && Ival[4])
 					{
-						I[0] = I[3] + I[4];
+						I[0] = I[1] + I[4];
 						Ival[0] = true;
 						TextBoxS.Text = I[0].ToString();
-						LabelS.Text = "Calculated from (I3 + I4)";
+						LabelS.Text = "Calculated from (I1 + I4)";
 					}
 				}
 

@@ -252,6 +252,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Classes\Quiz1.cs" />
     <Compile Include="Classes\Quiz2.cs" />
+    <Compile Include="Classes\Quiz3.cs" />
     <Compile Include="Classes\Styles.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
