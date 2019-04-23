@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="design2.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %></title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+        <style type="text/css">
+            .auto-style1 {
+                text-align: left;
+                height: 120px;
+                margin-top: 78px;
+                margin-bottom: 16px;
+                width: auto;
+                margin-right: 0px;
+            }
+            .auto-style2 {
+                text-align: center;
+                height: 340px;
+                margin-top: 0px;
+                width: auto;
+                
+            }
+            .auto-style3 {
+                text-align: center;
+                color:#889bb0 ;
+                height: 50px;
+                margin-top: 0px;
+                margin-left:350px;
+                width: auto;
+                
+            }
+            .auto-style5 {
+                top: 5px;
+                right: 0px;
+            }
+            .auto-style8 {
+                text-align: right;
+                color: #FFFFFF;
+            }
+            .auto-style11 {
+                left: 0px;
+                top: 1px;
+                width: 150px;
+                height: 12px;
+            }
+            .auto-style12 {
+                text-align: left;
+                left: 24px;
+                top: 24px;
+                width: 443px;
+                height: 52px;
+            }
+            .auto-style13 {
+                text-align: right;
+                left: 540px;
+                top: 28px;
+                width: 101px;
+                height: 52px;
+            }
+            .auto-style14 {
+                text-align: right;
+                left: 550px;
+                top: 28px;
+                width: 200px;
+                height: 52px;
+            }
+            .auto-style15 {
+                left: -16px;
+                top: -5px;
+                width: 430px;
+                height: 41px;
+            }
+            .auto-style16 {
+                font-size: xx-large;
+            }
+            .auto-style17 {
+                font-size: x-large;
+            }
+            .auto-style18 {
+                left: 0px;
+                top: 1px;
+                width: 85px;
+                height: 12px;
+            }
+            </style>
+
+
+        </head>
+    <body style="height: 484px; margin-top: 0; width: auto;">
+        <form runat="server" class="auto-style1">
+
+            <div class="auto-style2">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+        <div class="navbar navbar-inverse navbar-fixed-bottom" style="left: 0px; right: 0px; bottom: 0px; height: 10px; color: #000000; background-color: #889bb0;">
+        </div>
+      
+        <div class="navbar navbar-inverse navbar-fixed-top" style="left: 0px; right: 0px; top: 0px; height: 85px; color: #FFFFFF; background-color: #889bb0; text-align: left; font-size: large; font-family: 'Times New Roman'; bottom: -8px; margin-bottom: 348px; right: 0px; margin-right: 0px;">
+           <ul class="nav navbar-nav" style="width:auto; height: 118px; margin-right: 1px;">
+                <li class="auto-style12"><a runat="server" href="~/Default" class="auto-style15"><span class="auto-style8"><span class="auto-style16">ECE 206: Circuits I </span> <br /> <span class="auto-style17">Introduction To Circuit Analysis</span></span></a></li>
+                <li class="auto-style14"><a runat="server" href="http://www.bisonacademy.com/ECE206/Index.htm" class="auto-style11"><span class="auto-style8">Bison Academy</span></a></li>
+                <li class="auto-style13"><a runat="server" href="~/About" class="auto-style18"><span class="auto-style8">About</span></a></li>
+                <li></li>
+                <li>
+
+                </li>
+
+                <li class="auto-style3">
+               <asp:Button runat="server" OnClick="DarkMode_Click"  Text="Toggle Dark Mode" class="button" Height="31px" ID="Button2" CssClass="auto-style5" Width="156px"/>
+                </li>
+
+           </ul>
+
+               </div>
+
+                            
+                <br />
+                <br />
+
+            </div>
+
+    </form>
+</body>
+</html>
