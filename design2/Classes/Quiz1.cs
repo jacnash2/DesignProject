@@ -7,9 +7,14 @@ namespace design2.Classes
 {
 	public static class Quiz1
 	{
+		//these are variables generated with random numbers
+		//there values need to be saved here or else they'll be lost on page refreshes
+		//they might even be lost when the submit button is pressed, so it wouldn't work at all.
 		private static double _q3Vin, _q3R;
 		public static int _q6Volts, _q6mA, _q7R, _Q4V, _Q4mA, _Q5Ohms, _Q5mA;
 		
+		//these are simple getters and setters that remember the values and pass them back to the other class
+		//the formatting here is a little different than java, just follow along here and there shouldn't be problems
 		public static int Q4V
 		{
 			get { return _Q4V; }
@@ -30,6 +35,14 @@ namespace design2.Classes
 			get { return _Q5mA; }
 			set { _Q5mA = value; }
 		}
+
+		//here are the generated answers
+		//these calculations could be done on the other page, but it's cleaner to do it on here
+		//NOTE: remember to use doubles instead of ints for anything that isn't an integer answer
+		//division involving integers could also result in weird answers due to integer division without rounding
+		//keep that in mind when looking for answers and answer ranges
+		//working with only doubles for anything involving division or decimal places is a good idea
+		//also be careful with integer division upon unit conversion - if you divide by 1000, some values could be lost
 		public static int Q4ans
 		{
 			get { return _Q4V * 1000 / _Q4mA; }
@@ -58,6 +71,7 @@ namespace design2.Classes
 			get { return _q6Volts * 1000 / _q6mA; }
 		}
 		//returns an array of acceptable answers (size 2)
+		//use <= and >= to check if the user's answer is between the range
 		public static int[] Q7ans
 		{
 			get
