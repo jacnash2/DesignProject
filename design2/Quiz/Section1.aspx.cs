@@ -14,6 +14,12 @@ namespace design2
 		int Q3Vin, Q3R, RQ3scalar, Q6Volts, Q6mA, Q4Volts, Q4mA, Q5Ohms, Q5mA, Q7R;
 
 		//Page_Load is executed between the PreInit and PostInit methods (I think)
+		//Everything in the Page_Load here deals with random number generation
+		//if random number generation IS NOT USED, 
+		//then replace this with the empty, commented out version below:
+/*		protected void Page_Load(object sender, EventArgs e)
+		{
+		}*/
 		protected void Page_Load(object sender, EventArgs e)
 		{
 			//IsPostBack means "isRefreshed," so this stuff only happens the first time the page loads, not on each refresh.

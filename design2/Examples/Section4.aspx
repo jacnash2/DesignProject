@@ -4,68 +4,79 @@
 	<p class="header">Interactive Example</p>
 	<p>
 		<img alt="" src="../Pictures/section3-4b.png" style="width: 514px; height: 485px" /></p>
+		<p class="text-left">
+			&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Enter values for the voltages and it will calculate any remaining voltages that it can:</p>
 	<p class="text-left">
+		&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
 		V1 =
 		<asp:TextBox ID="TextBox1" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label1" runat="server"></asp:Label>
 		</p>
 	<p class="text-left">
+		&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
 		V2 =
 		<asp:TextBox ID="TextBox2" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label2" runat="server"></asp:Label>
 		</p>
 	<p class="text-left">
+		&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
 		V3 =
 		<asp:TextBox ID="TextBox3" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label3" runat="server"></asp:Label>
 		</p>
 	<p class="text-left">
+		&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
 		V4 =
 		<asp:TextBox ID="TextBox4" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label4" runat="server"></asp:Label>
 		</p>
 	<p class="text-left">
+		&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
 		V5 =
 		<asp:TextBox ID="TextBox5" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label5" runat="server"></asp:Label>
 		</p>
 	<p class="text-left">
+		&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
 		V6 =
 		<asp:TextBox ID="TextBox6" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label6" runat="server"></asp:Label>
 		</p>
 	<p class="text-left">
+		&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
 		V7 =
 		<asp:TextBox ID="TextBox7" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label7" runat="server"></asp:Label>
 		</p>
 	<p class="text-left">
+		&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
 		V8 =
 		<asp:TextBox ID="TextBox8" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label8" runat="server"></asp:Label>
 		</p>
 	<p class="text-left">
+		&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
 		V9 =
 		<asp:TextBox ID="TextBox9" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label9" runat="server"></asp:Label>
 		</p>
 	<p class="text-left">
-		V10 =
+		&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;V10 =
 		<asp:TextBox ID="TextBox10" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label10" runat="server"></asp:Label>
 		</p>
 	<p class="text-left">
-		<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Calculate Voltages" />
+		<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Calculate Voltages" Width="242px" />
 	</p>
 		<p>
 			&nbsp;</p>

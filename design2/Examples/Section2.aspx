@@ -38,11 +38,11 @@
 			<img alt="" src="../Pictures/eq2b.jpg" style="width: 606px; height: 229px" /><br />
 			Set values for the resistors:&nbsp; R1 =
 			<asp:TextBox ID="TextBox4" runat="server" Width="65px" class="button"></asp:TextBox>
-&nbsp;&nbsp;&nbsp; R2 =
+				Ω&nbsp;&nbsp;&nbsp; R2 =
 			<asp:TextBox ID="TextBox5" runat="server" Width="66px" class="button"></asp:TextBox>
-&nbsp;&nbsp;&nbsp; R3 =
+				Ω&nbsp;&nbsp;&nbsp; R3 =
 			<asp:TextBox ID="TextBox6" runat="server" Width="67px" class="button"></asp:TextBox>
-			<br />
+				Ω<br />
 			<br />
 			<asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Calculate Equivalent Resistance" Width="274px" class="button"/>
 &nbsp;&nbsp;&nbsp;
