@@ -4,67 +4,67 @@
 	<p class="header">Interactive Example</p>
 	<p>
 		<img alt="" src="../Pictures/section3-4b.png" style="width: 514px; height: 485px" /></p>
-	<p>
+	<p class="text-left">
 		V1 =
 		<asp:TextBox ID="TextBox1" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label1" runat="server"></asp:Label>
 		</p>
-	<p>
+	<p class="text-left">
 		V2 =
 		<asp:TextBox ID="TextBox2" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label2" runat="server"></asp:Label>
 		</p>
-	<p>
+	<p class="text-left">
 		V3 =
 		<asp:TextBox ID="TextBox3" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label3" runat="server"></asp:Label>
 		</p>
-	<p>
+	<p class="text-left">
 		V4 =
 		<asp:TextBox ID="TextBox4" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label4" runat="server"></asp:Label>
 		</p>
-	<p>
+	<p class="text-left">
 		V5 =
 		<asp:TextBox ID="TextBox5" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label5" runat="server"></asp:Label>
 		</p>
-	<p>
+	<p class="text-left">
 		V6 =
 		<asp:TextBox ID="TextBox6" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label6" runat="server"></asp:Label>
 		</p>
-	<p>
+	<p class="text-left">
 		V7 =
 		<asp:TextBox ID="TextBox7" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label7" runat="server"></asp:Label>
 		</p>
-	<p>
+	<p class="text-left">
 		V8 =
 		<asp:TextBox ID="TextBox8" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label8" runat="server"></asp:Label>
 		</p>
-	<p>
+	<p class="text-left">
 		V9 =
 		<asp:TextBox ID="TextBox9" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label9" runat="server"></asp:Label>
 		</p>
-	<p>
+	<p class="text-left">
 		V10 =
 		<asp:TextBox ID="TextBox10" runat="server" Width="50px"></asp:TextBox>
 		V&nbsp;&nbsp;&nbsp;
 		<asp:Label ID="Label10" runat="server"></asp:Label>
 		</p>
-	<p>
+	<p class="text-left">
 		<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Calculate Voltages" />
 	</p>
 		<p>

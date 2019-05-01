@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Section3.aspx.cs" Inherits="design2.Quiz.Section3" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-	<asp:Button ID="Button1" runat="server" Text="Back to Notes" />
+<p class="text-left">	<asp:Button ID="Button1" runat="server" Text="Back to Notes" />
 	<br />
 	<br />
 	<span style="text-decoration: underline">Figure for Q1. through Q5.</span><br />
@@ -144,7 +144,7 @@
 	<br />
 	Q10. If the voltage into a circuit is doubled, what happens to the currents throughout the circuit?<asp:Label ID="Label10" runat="server"></asp:Label>
 	<br />
-	<asp:RadioButtonList ID="RadioButtonList1" runat="server">
+	<asp:RadioButtonList class="text-left" ID="RadioButtonList1" runat="server" BorderStyle="Solid">
 		<asp:ListItem>Their value is halved.</asp:ListItem>
 		<asp:ListItem>Their value is doubled.</asp:ListItem>
 		<asp:ListItem>They are unchanged.</asp:ListItem>
@@ -155,5 +155,5 @@
 	<br />
 	<br />
 	<asp:Label ID="lblOutput" runat="server"></asp:Label>
-	<br />
+	<br /></p>
 	</asp:Content>

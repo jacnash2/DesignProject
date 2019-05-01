@@ -7,51 +7,43 @@
 	<br />
 	<img alt="" src="../Pictures/section3-2a.png" style="width: 541px; height: 509px" /><br />
 	<br />
-	Enter values for some of the currents and it will calculate the ones that it can:
-	<br />
-	Is =
+	<p p class="text-left">Enter values for some of the currents and it will calculate the ones that it can:</p>
+<p class="text-left">	Is =
 		<asp:TextBox ID="TextBoxS" runat="server" Width="50px"></asp:TextBox>
 		A&nbsp;&nbsp;&nbsp;&nbsp;
-	<asp:Label ID="LabelS" runat="server"></asp:Label>
-	<br />
-	I1 =
+	<asp:Label ID="LabelS" runat="server"></asp:Label></p>
+<p class="text-left">	I1 =
 		<asp:TextBox ID="TextBox1" runat="server" Width="50px"></asp:TextBox>
 		A&nbsp;&nbsp;&nbsp;&nbsp;
 	<asp:Label ID="Label1" runat="server"></asp:Label>
-	<br />
-	I2 =
+	</p>
+<p class="text-left">	I2 =
 		<asp:TextBox ID="TextBox2" runat="server" Width="50px"></asp:TextBox>
 		A&nbsp;&nbsp;&nbsp;&nbsp;
 	<asp:Label ID="Label2" runat="server"></asp:Label>
-	<br />
-	I3 =
+	</p>
+<p class="text-left">	I3 =
 		<asp:TextBox ID="TextBox3" runat="server" style="margin-bottom: 0" Width="50px"></asp:TextBox>
 		A&nbsp;&nbsp;&nbsp;&nbsp;
 	<asp:Label ID="Label3" runat="server"></asp:Label>
-	<br />
-	I4 =
+</p><p class="text-left">	I4 =
 		<asp:TextBox ID="TextBox4" runat="server" Width="50px"></asp:TextBox>
 		A&nbsp;&nbsp;&nbsp;&nbsp;
 	<asp:Label ID="Label4" runat="server"></asp:Label>
-	<br />
-	I5 = <asp:TextBox ID="TextBox5" runat="server" Width="50px"></asp:TextBox>
+</p><p class="text-left">	I5 = <asp:TextBox ID="TextBox5" runat="server" Width="50px"></asp:TextBox>
 		A&nbsp;&nbsp;&nbsp;&nbsp;
 	<asp:Label ID="Label5" runat="server"></asp:Label>
-	<br />
-	I6 =
+</p><p class="text-left">	I6 =
 		<asp:TextBox ID="TextBox6" runat="server" Width="50px"></asp:TextBox>
 		A&nbsp;&nbsp;&nbsp;&nbsp;
 	<asp:Label ID="Label6" runat="server"></asp:Label>
-	<br />
-	I7 =
+</p><p class="text-left">	I7 =
 		<asp:TextBox ID="TextBox7" runat="server" Width="50px"></asp:TextBox>
 		A&nbsp;&nbsp;&nbsp;&nbsp;
 	<asp:Label ID="Label7" runat="server"></asp:Label>
-		<br />
-		<br />
-		<asp:Button ID="ButtonSubmit" runat="server" Text="Calculate Currents" OnClick="ButtonSubmit_Click" />
-	<br />
-	<p class="header">&nbsp;</p>
+</p>		<br />
+		<p class="text-left"><asp:Button ID="ButtonSubmit" runat="server" Text="Calculate Currents" OnClick="ButtonSubmit_Click" />
+</p>	<p class="header">&nbsp;</p>
 	<p class="header">Example Problems</p>
 	<img alt="" src="../Pictures/section3-2b.png" style="width: 541px; height: 509px" /><br />
 	<br />
