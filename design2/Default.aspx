@@ -1,26 +1,30 @@
 <%@ Page Title="EE 206 Index" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="design2._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:Label ID="Label1" runat="server" Style="float:none;" padding="0px"></asp:Label>
+	<asp:Label ID="Label1" runat="server" Style="float:none;" padding="0px"></asp:Label>
 	<div class="jumbotron">
-<table style="float:left; width: 30%; height: 100px; margin-left: 140px; margin-bottom: 0px;" border="1";  contenteditable="false" draggable="true">
+<table style="float:left; width: 30%; height: 100px; margin-left: 140px; margin-bottom: 0px;" border="1";  contenteditable="false" draggable="true" id="table1">
 						<tr>
-							<td style="text-align: center; font-weight: bold; height: 20px;" draggable="true">Course Information</td>
+							<td style="" draggable="true">
+								<asp:Label ID="Label2" runat="server" Text="Course Information"></asp:Label>
+							</td>
 						</tr>
                         <tr>
-							<td style="text-align: center; color:#889bb0; font-weight: bold; height: 20px;" draggable="true"><a href="chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/http://www.bisonacademy.com/ECE206/Lectures/00_Syllabus.pdf">Syllabus</a></td>
+							<td style="" draggable="true"><a href="chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/http://www.bisonacademy.com/ECE206/Lectures/00_Syllabus.pdf">Syllabus</a></td>
 						</tr>
                         <tr>
-							<td style="text-align: center; color:#889bb0;font-weight: bold; height: 20px;" draggable="true"><a href="http://www.bisonacademy.com/ECE206/Index.htm">Schedule</a></td>
+							<td style="" draggable="true"><a href="http://www.bisonacademy.com/ECE206/Index.htm">Schedule</a></td>
 						</tr>
                         <tr>
-							<td style="text-align: center;color:#889bb0; font-weight: bold; height: 20px;" draggable="true"><a href="https://www.amazon.com/Electric-Circuits-10th-James-Nilsson/dp/0133760030/ref=sr_1_3?keywords=Electric+Circuits+Nilsson&amp;qid=1555649599&amp;s=gateway&amp;sr=8-3">Textbook</a></td>
+							<td style="" draggable="true"><a href="https://www.amazon.com/Electric-Circuits-10th-James-Nilsson/dp/0133760030/ref=sr_1_3?keywords=Electric+Circuits+Nilsson&amp;qid=1555649599&amp;s=gateway&amp;sr=8-3">Textbook</a></td>
 						</tr>
 </table>
 
-<table style="float:right; width: 30%; height: 100px; margin-right: 200px; margin-bottom:0px; "border="1";  contenteditable="false" draggable="true">
+<table style="float:right; width: 30%; height: 100px; margin-right: 200px; margin-bottom:0px; "border="1";  contenteditable="false" draggable="true" id="table2">
 						<tr>
-							<td style="text-align: center; font-weight: bold; height: 20px;" draggable="true">Resources</td>
+							<td draggable="true">
+								<asp:Label ID="Label3" runat="server" Text="Resources"></asp:Label>
+							</td>
 						</tr>
                         <tr>
 							<td style="text-align: center; color:#889bb0; font-weight: bold; height: 20px;" draggable="true"><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="/SI">S.I. Units</asp:HyperLink></td>

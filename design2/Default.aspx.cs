@@ -11,8 +11,14 @@ namespace design2
 	public partial class _Default : Page
 	{
 		protected void Page_Load(object sender, EventArgs e)
+		{		
+			Label2.ForeColor = System.Drawing.Color.Black;
+			Label3.ForeColor = System.Drawing.Color.Black;
+		}
+		public void Page_PreInit()
 		{
-			if (Styles.DarkModeIsOff) Label1.Text = "Dark mode does not apply to the index page.";
+			if (Styles.DarkModeIsOff) this.Theme = "DarkMode";
+			else this.Theme = "LightMode";
 		}
 	}
 }
