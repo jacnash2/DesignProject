@@ -250,6 +250,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="VIRCalculator.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -461,6 +462,13 @@
     </Compile>
     <Compile Include="SI.aspx.designer.cs">
       <DependentUpon>SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VIRCalculator.aspx.cs">
+      <DependentUpon>VIRCalculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIRCalculator.aspx.designer.cs">
+      <DependentUpon>VIRCalculator.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
