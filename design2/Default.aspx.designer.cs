@@ -157,15 +157,6 @@ namespace design2 {
         protected global::System.Web.UI.WebControls.HyperLink HyperLink27;
         
         /// <summary>
-        /// HyperLink25 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink25;
-        
-        /// <summary>
         /// HyperLink28 control.
         /// </summary>
         /// <remarks>

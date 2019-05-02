@@ -1,7 +1,7 @@
 <%@ Page Title="EE 206 Index" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="design2._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    s<asp:Label ID="Label1" runat="server" Style="float:none;" padding="0px"></asp:Label>
+    <asp:Label ID="Label1" runat="server" Style="float:none;" padding="0px"></asp:Label>
 	<div class="jumbotron">
 <table style="float:left; width: 30%; height: 100px; margin-left: 140px; margin-bottom: 0px;" border="1";  contenteditable="false" draggable="true">
 						<tr>
@@ -103,7 +103,6 @@
 							<td style="text-align: center; height: 52px;" class="text-primary">
 								<asp:HyperLink ID="HyperLink27" runat="server" NavigateUrl="notes/Section5">Voltage Nodes</asp:HyperLink>
 							</td>
-							<asp:HyperLink ID="HyperLink25" runat="server" NavigateUrl="Examples/Section4">Example Problems</asp:HyperLink>
 
 							<td style="text-align: center; height: 52px;">
 								<asp:HyperLink ID="HyperLink28" runat="server" NavigateUrl="Examples/Section5">Example Problems</asp:HyperLink>
